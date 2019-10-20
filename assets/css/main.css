@@ -223,7 +223,6 @@ button, .btn, input[type=submit] {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .header-banner h1 {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   text-align: center;
   color: white !important;
 }
@@ -327,6 +326,18 @@ a {
   position: absolute;
   right: 0;
   margin-top: 5px;
+}
+
+@font-face {
+  font-family: "logofont";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/BebasNeue-Regular.otf");
+}
+.brand-text {
+  font-family: logofont !important;
+  padding: 0 !important;
+  font-size: 6vw;
 }
 
 footer {

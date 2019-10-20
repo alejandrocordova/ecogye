@@ -92,3 +92,16 @@ a {
 
 
 }
+
+@font-face {
+	font-family: 'logofont';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/BebasNeue-Regular.otf');
+}
+
+.brand-text {
+	font-family: logofont !important;
+	padding: 0 !important;
+	font-size: 6vw;
+}
