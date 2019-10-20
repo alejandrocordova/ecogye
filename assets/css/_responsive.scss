@@ -9,6 +9,15 @@
 
 	}
 
+	header {
+		display: block;
+		height: 500px;
+		background-image: url('../img/bg_banner.png');
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+
 	.jumbotron .container blockquote {
 		font-size: 18px;
 	}
