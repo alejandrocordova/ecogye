@@ -454,34 +454,34 @@ header {
         }
     }
 }
-footer{
-	.container-copy{ float: left; }
-
-	.container-social{
-		    float: right;
-
-		.nav--social{
-			overflow: hidden;
-
-			ul { list-style: none; }
-			li { float: left;}
-
-			a {
-				display: block;
-				padding-left: 30px;
-                padding-bottom: 30px;
-            }
-
-			.feather {
-				height: 16px;
-				stroke: #fff;
-                stroke-width: 1;
-            }
-        }
-    }
-}
 
 */
+footer .container-copy {
+  float: left;
+}
+footer .container-social {
+  float: right;
+}
+footer .container-social .nav--social {
+  overflow: hidden;
+}
+footer .container-social .nav--social ul {
+  list-style: none;
+}
+footer .container-social .nav--social li {
+  float: left;
+}
+footer .container-social .nav--social a {
+  display: block;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+footer .container-social .nav--social .feather {
+  height: 16px;
+  stroke: #fff;
+  stroke-width: 1;
+}
+
 .mslide {
   position: relative;
   width: 100%;
@@ -830,5 +830,121 @@ footer{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 414px) {
+  #m-dics {
+    display: block;
+  }
+
+  #d-dics {
+    display: none !important;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+  .navbar .container--nav {
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 1000px !important;
+  }
+  .navbar .container--nav .itemnav--left {
+    float: none !important;
+  }
+  .navbar .container--nav .itemnav--left li {
+    float: none;
+    text-align: center;
+    font-size: 25px;
+    clear: both;
+  }
+  .navbar .container--nav .itemnav--right {
+    float: none;
+    text-align: center;
+    background: #F6FAFD;
+    overflow: scroll;
+    border-top: 1px solid #D7E0E7;
+  }
+  .navbar .container--nav .itemnav--right ul {
+    display: inline-block;
+  }
+  .navbar .container--nav .itemnav--right li {
+    text-align: center;
+  }
+
+  #section1 .mslide {
+    display: none;
+  }
+
+  #section3 .container .flex-container {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+
+  #section4 {
+    display: none;
+  }
+
+  #section5 h1 {
+    font-size: 35px;
+  }
+
+  #servContent2 h1 {
+    font-size: 24pt;
+  }
+
+  footer .container-copy {
+    float: none;
+    text-align: center;
+  }
+  footer .container-copy .hl {
+    font-size: 14px;
+  }
+  footer .container-social {
+    padding: 0;
+    float: none;
+  }
+  footer .container-social .nav--social {
+    overflow: hidden;
+    text-align: center;
+    padding: 0;
+  }
+  footer .container-social .nav--social ul {
+    display: inline-block;
+  }
+  footer .container-social .nav--social a {
+    padding-bottom: none;
+    padding-top: 24pt;
+  }
+  footer .container-social .nav--social .feather {
+    height: 20px;
+    margin: auto;
+  }
+
+  .btn--large {
+    width: 90%;
+  }
+}
+/*
+@media screen and (max-width: 320px)
+
+	.itemnav--right
+		float: none
+		overflow: scroll
+
+		ul
+			list-style: none
+		li
+			float: left
+
+		a
+			padding: 10px !important
+
+	#section1, #section2, #section3, #section4, #section5
+		h1, h2
+			font-size: 25px
+
+	#servContent2 h1
+		font-size: 18pt
+*/
 
 /*# sourceMappingURL=main.css.map */
