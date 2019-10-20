@@ -274,7 +274,6 @@ blockquote {
   padding-bottom: 8pt;
   line-height: 24pt;
 }
-
 blockquote:before {
   content: "";
   font-family: "Font Awesome 5 Pro Bold";
