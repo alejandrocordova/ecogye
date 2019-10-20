@@ -67,11 +67,28 @@ a {
 	text-decoration: none;
 }
 
-.jumbotron 	h1{
-	text-align: center;
-	font-size: 32px;
-	font-weight: lighter;
-	color: $light !important;
-	padding-top: $pd4;
-	padding-bottom: $pd4;
+.jumbotron 	{
+
+	h1 {
+		text-align: center;
+		font-size: 32px;
+		font-weight: lighter;
+		color: $light !important;
+		padding-top: $pd4;
+		padding-bottom: $pd4;
+	}
+
+	blockquote {
+		margin: auto;
+		display: block;
+		position: relative;
+
+		.author {
+			position: absolute;
+			right: 0;
+			margin-top: 5px;
+		}
+	}
+
+
 }

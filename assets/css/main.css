@@ -87,7 +87,6 @@ button, .btn, input[type=submit] {
   background: rgba(255, 255, 255, 0.8);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  padding-top: 20px;
 }
 
 .header-banner {
@@ -319,6 +318,16 @@ a {
   color: #575757 !important;
   padding-top: 32pt;
   padding-bottom: 32pt;
+}
+.jumbotron blockquote {
+  margin: auto;
+  display: block;
+  position: relative;
+}
+.jumbotron blockquote .author {
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
 }
 
 footer {
