@@ -396,6 +396,14 @@ input[type=email]:focus {
   outline: none;
 }
 
+.shop {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 calc(50% - 1em);
+}
+
 header {
   display: block;
   height: 500px;
