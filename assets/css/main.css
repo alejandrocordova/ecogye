@@ -230,6 +230,10 @@ button, .btn, input[type=submit] {
   color: white !important;
 }
 
+#activities {
+  display: flex;
+}
+
 @font-face {
   font-family: "Font Awesome 5 Pro Bold";
   font-style: normal;
