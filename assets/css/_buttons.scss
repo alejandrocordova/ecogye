@@ -17,6 +17,12 @@ button, .btn, input[type=submit] {
 	margin-right: auto;
 }
 
+.btn--complete {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .btn--send {
     padding-bottom: $pd1;
 	text-transform: uppercase;

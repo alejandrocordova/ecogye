@@ -52,6 +52,12 @@ button, .btn, input[type=submit] {
   margin-right: auto;
 }
 
+.btn--complete {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn--send {
   padding-bottom: 8pt;
   text-transform: uppercase;
@@ -209,7 +215,7 @@ button, .btn, input[type=submit] {
 .header-banner {
   display: block;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 50px;
   overflow: hidden;
 }
 .header-banner img {
@@ -396,12 +402,32 @@ input[type=email]:focus {
   outline: none;
 }
 
-.shop {
-  display: flex;
+.shop .flex-container {
   display: -webkit-flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 calc(50% - 1em);
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.shop .flex-container .flex-item {
+  -webkit-flex: 1 0 20%;
+  flex: 1 0 20%;
+  padding: 16pt;
+  width: 20%;
+  display: block;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+.shop .flex-container .flex-item .card-header h5 {
+  text-transform: uppercase;
+}
+.shop .flex-container .flex-item .card-body img {
+  display: block;
+  width: 100%;
+}
+.shop .flex-container .flex-item .card-footer p {
+  display: inline-block !important;
+  margin-right: 10px;
 }
 
 header {
@@ -1001,5 +1027,32 @@ footer .container-social .nav--social .feather {
 	#servContent2 h1
 		font-size: 18pt
 */
+.shop .flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.shop .flex-container .flex-item {
+  -webkit-flex: 1 0 20%;
+  flex: 1 0 20%;
+  padding: 16pt;
+  width: 20%;
+  display: block;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+.shop .flex-container .flex-item .card-header h5 {
+  text-transform: uppercase;
+}
+.shop .flex-container .flex-item .card-body img {
+  display: block;
+  width: 100%;
+}
+.shop .flex-container .flex-item .card-footer p {
+  display: inline-block !important;
+  margin-right: 10px;
+}
 
 /*# sourceMappingURL=main.css.map */
