@@ -1,0 +1,34 @@
+@import "vars";
+
+button, .btn, input[type=submit] {
+	border-radius: 25px;
+	border: none;
+	padding: 7pt 15pt;
+	font-weight: bolder;
+	font-size: 14px;
+	background: none;
+	padding-top: $pd1;
+	padding-bottom: $pd1;
+}
+
+.btn--large {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn--send {
+    padding-bottom: $pd1;
+	text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.btn--primary {
+	background: $primary !important;
+	color: white;
+}
+
+.btn--primary:hover {
+    background: darken($primary, 10%);
+}
+

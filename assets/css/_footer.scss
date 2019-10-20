@@ -1,0 +1,25 @@
+@import "vars";
+
+footer {
+	background: darken($dark, 5%);
+	overflow: hidden;
+}
+
+.hl {
+    color: #fafafa;
+    letter-spacing: 2px;
+} 
+
+.feather-twitter:hover {
+    fill: lightblue;
+    stroke-width: 0 !important;
+}
+
+.feather-facebook:hover {
+    fill: blue;
+    stroke-width: 0 !important;
+}
+
+.feather-youtube:hover {
+    fill: crimson;
+}

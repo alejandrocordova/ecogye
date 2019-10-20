@@ -1,0 +1,43 @@
+@import "vars";
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: greyscale;
+	-moz-font-smoothing: antialiased;
+	-moz-font-smoothing: greyscale;
+    -o-font-smoothing: greyscale;
+}
+
+html, body, .full-height {
+	height: 100%;
+	display: block;
+}
+
+.full-height {
+	position: relative;
+
+	.jumbotron {
+		position: absolute;
+		left: 0; bottom: 0;
+		width: 100%;
+	}
+}
+
+header {
+	height: 100%;
+}
+
+.active {
+	color: $primary !important;
+	transition: 0.3s all ease;
+	font-weight: bolder;
+}
+
+#m-dics {
+    display: none;
+}
