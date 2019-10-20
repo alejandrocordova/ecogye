@@ -39,6 +39,11 @@ blockquote{
 	}
 }
 
+.active {
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+
 p {
 	font-size: 16px;
 	font-weight: normal;

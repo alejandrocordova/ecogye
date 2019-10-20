@@ -31,12 +31,6 @@ header {
   height: 100%;
 }
 
-.active {
-  color: #41866B !important;
-  transition: 0.3s all ease;
-  font-weight: bolder;
-}
-
 #m-dics {
   display: none;
 }
@@ -91,6 +85,10 @@ button, .btn, input[type=submit] {
 
 .header-banner {
   text-align: center;
+}
+.header-banner img {
+  display: block;
+  height: 80px;
 }
 .header-banner p {
   color: white !important;
@@ -214,6 +212,10 @@ button, .btn, input[type=submit] {
   padding-top: 150px;
   overflow: hidden;
 }
+.header-banner img {
+  display: block;
+  height: 80px;
+}
 .header-banner p {
   font-size: 30px;
   line-height: 35px;
@@ -278,6 +280,11 @@ blockquote:before {
   font-family: "Font Awesome 5 Pro Bold";
   font-size: 30px;
   padding-right: 10px;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-style: dashed;
 }
 
 p {

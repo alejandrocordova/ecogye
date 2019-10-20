@@ -20,6 +20,11 @@
 .header-banner {
 	text-align: center;
 
+	img {
+		display: block;
+		height: 80px;
+	}
+
 	p {
 		color: white !important;
 		font-size: 30px;
