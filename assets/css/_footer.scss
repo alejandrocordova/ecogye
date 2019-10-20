@@ -1,14 +1,14 @@
 @import "vars";
 
 footer {
-	background: darken($dark, 5%);
+	background: darken($footercolor, 3);
 	overflow: hidden;
 }
 
 .hl {
     color: #fafafa;
     letter-spacing: 2px;
-} 
+}
 
 .feather-twitter:hover {
     fill: lightblue;

@@ -32,7 +32,7 @@ header {
 }
 
 .active {
-  color: #66BC5A !important;
+  color: #41866B !important;
   transition: 0.3s all ease;
   font-weight: bolder;
 }
@@ -65,12 +65,12 @@ button, .btn, input[type=submit] {
 }
 
 .btn--primary {
-  background: #66BC5A !important;
+  background: #41866B !important;
   color: white;
 }
 
 .btn--primary:hover {
-  background: #4da142;
+  background: #306450;
 }
 
 .container {
@@ -200,7 +200,7 @@ button, .btn, input[type=submit] {
 }
 
 #section5 {
-  background: #333;
+  background: #17393A;
   text-align: center;
 }
 #section5 h1 {
@@ -331,7 +331,7 @@ a {
 }
 
 footer {
-  background: #262626;
+  background: #132e2f;
   overflow: hidden;
 }
 
