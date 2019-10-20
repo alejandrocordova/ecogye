@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="apple-touch-icon" href="favicon.png">
+	<link rel="shortcut icon" href="favicon.png">
+	<title>Servicios | DRONSCAN S.A.</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/css/dics.css">
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/feather.js"></script>
+	<script src="assets/js/slider.js"></script>
+	<script src="assets/js/dics.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', domReady);
+
+		function domReady() {
+			new Dics ({
+				container: document.querySelectorAll('.b-dics') [0],
+				linesOrientation: 'horizontal',
+				textPosition: 'top'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[1],
+				linesOrientation: 'vertical',
+				hideText: true,
+				textPosition: 'center'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[2]
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[3],
+				linesOrientation: 'vertical',
+				textPosition: 'left',
+				arrayBackgroundColorText: ['#000000', '#FFFFFF'],
+				arrayColorText: ['#FFFFFF', '#000000'],
+				linesColor: 'rgb(0,0,0)'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[4],
+				linesOrientation: 'vertical',
+				textPosition: 'right'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[5],
+				textPosition: 'bottom'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[6],
+				filters: ['blur(3px)', 'grayscale(1)', 'sepia(1)', 'saturate(3)']
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[7],
+				rotate: '45deg'
+			})
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="container--nav">
+				<div class="itemnav--left">
+					<ul>
+						<li><a href="index.html"><span>DRON</span>SCAN S.A.</a></li>
+					</ul>
+				</div>
+				<div class="itemnav--right">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="serv.html" class="active">Servicios</a></li>
+						<li><a href="team.html">Equipo de trabajo</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Escale en el mundo de la Información con un software <br> acorde a sus actividades, para tener información precisa, verás y oportuna.</h1>
+		</div>
+	</div>
+
+	<div id="servContent">
+		<div class="container">
+			<div class="slide">
+				<div class="slideshow">
+					<ul class="slider">
+						<li>
+							<img src="assets/img/lg_slide__0002_Layer 2.jpg" alt="">
+							<div class="caption">
+								<div class="blur">
+									<h1><a href="#">Fotogrametría</a></h1>
+									<p>Obtenga mapas y planos de grandes extensiones de terreno <br>por medio de la fotografía aérea</p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<img src="assets/img/SCDP.jpg" alt="">
+							<div class="caption">
+								<div class="blur">
+									<h1><a href="#">Sistema de control de <br>producción del banano</a></h1>
+									<p>Contenido del slide (opcional)</p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<img src="assets/img/lg_slide__0003_Layer 1.jpg" alt="">
+							<div class="caption">
+								<div class="blur">
+									<h1><a href="#">Cámaras de seguridad</a></h1>
+									<p>Contenido del slide (opcional)</p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<img src="assets/img/lg_slide__0001_Layer 3.jpg" alt="">
+							<div class="caption">
+								<div class="blur">
+									<h1><a href="#">Seguridad de punto a punto</a></h1>
+									<p>Contenido del slide (opcional)</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ol class="pagination">
+						
+					</ol>
+				</div>
+				<div class="left">
+					<span class="fas fa-chevron-left"></span>
+				</div>
+				<div class="right">
+					<span class="fas fa-chevron-right"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="servContent2">
+		<div class="container">
+			<h1>FOTOGRAMETRÍA</h1>
+			<br>
+			<blockquote>
+				La fotogrametría es la técnica cuyo objeto es estudiar y definir con precisión la forma, dimensiones y posición en el espacio de un objeto cualquiera, utilizando esencialmente medidas hechas sobre una o varias fotografías de ese objeto.
+			</blockquote>
+			
+			<p>Aprovechamos la fotogrametría <i>–junto a la ayuda de una cámara multiespectral–</i> para analizar el estado de salud de los cultivos y así evitar la pérdida de los mismos.</p>
+			<br>
+			<div id="d-dics" style="width: 100% 0;">
+				<div class="b-dics">
+					<img src="assets/img/Comparador_1.jpg" alt="NDVI">
+					<img src="assets/img/Comparador_3.jpg" alt="RGB">
+					<img src="assets/img/Comparador_2.jpg" alt="NDRE">
+				</div>
+
+				<div class="hl">Análisis más usados en los cultivos: <i>NDVI, NDRE, TCARI/OSAVI</i></div>
+			</div>
+
+			<div id="m-dics" style="width: 100% 0;">
+				<div class="b-dics">
+					<img src="assets/img/Comparador_mini_1.jpg" alt="NDVI">
+					<img src="assets/img/Comparador_mini_3.jpg" alt="RGB">
+					<img src="assets/img/Comparador_mini_2.jpg" alt="NDRE">
+				</div>
+
+				<div class="hl">Análisis más usados en los cultivos: <i>NDVI, NDRE, TCARI/OSAVI</i></div>
+			</div>
+		</div>
+	</div>
+	<div id="section5">
+		<div class="container">
+			<h1>Suscribete para recibir noticias y promociones</h1>
+			<input type="email" placeholder="tu.correo@ejemplo.com">
+			<br>
+			<input type="submit" class="btn btn--large btn--primary btn--send" value="Suscribirse">
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="container-copy">
+				<p class="hl">DronScan S.a. al servicio de la agricultura</p>
+			</div>
+			<div class="container-social">
+				<nav class="nav--social">
+					<ul>
+						<li><a href="#"><i data-feather="twitter"></i></a></li>
+						<li><a href="#"><i data-feather="facebook"></i></a></li>
+						<li><a href="#"><i data-feather="youtube"></i></a></li>
+						<li><a href="#"><i data-feather="linkedin"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	<script>
+		feather.replace()
+	</script>
+</body>
+</html>
