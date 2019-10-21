@@ -121,7 +121,7 @@ button, .btn, input[type=submit] {
 
 #section2 {
   background: rgba(0, 0, 0, 0.4);
-  background-image: url("../img/pattern1.jpg");
+  background-image: url("../img/bg/pattern1.jpg");
   background-blend-mode: overlay;
 }
 #section2 .container h2 {
@@ -433,7 +433,7 @@ input[type=email]:focus {
 header {
   display: block;
   height: 500px;
-  background-image: url("../img/bg_banner.png");
+  background-image: url("../img/bg/bg_banner.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -896,7 +896,7 @@ footer .container-social .nav--social .feather {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 800px) {
   #m-dics {
     display: block;
   }
@@ -1005,28 +1005,6 @@ footer .container-social .nav--social .feather {
     width: 90%;
   }
 }
-/*
-@media screen and (max-width: 320px)
-
-	.itemnav--right
-		float: none
-		overflow: scroll
-
-		ul
-			list-style: none
-		li
-			float: left
-
-		a
-			padding: 10px !important
-
-	#section1, #section2, #section3, #section4, #section5
-		h1, h2
-			font-size: 25px
-
-	#servContent2 h1
-		font-size: 18pt
-*/
 .shop .flex-container {
   display: -webkit-flex;
   display: flex;
