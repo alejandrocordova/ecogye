@@ -914,7 +914,7 @@ footer .container-social .nav--social .feather {
   header {
     display: block;
     height: 500px;
-    background-image: url("../img/bg_banner2.jpeg");
+    background-image: url("../img/bg/bg_2.jpg");
     background-size: cover;
     background-attachment: fixed;
   }
