@@ -3,7 +3,9 @@
 header {
 	display: block;
 	height: 500px;
-	background-image: url('../img/bg/bg_banner.png');
+	background-image: url('../img/bg/bg_2.jpg');
+	background-color: rgba(black, .6);
+	background-blend-mode: multiply; 
 	background-size: cover;
 	background-attachment: fixed;
 }
