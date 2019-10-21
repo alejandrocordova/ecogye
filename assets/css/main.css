@@ -247,7 +247,7 @@ button, .btn, input[type=submit] {
   src: url("../fonts/fontawesome/webfonts/fa-solid-900.eot");
   src: url("../fonts/fontawesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/webfonts/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/webfonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fontawesome/webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
-h1, h2, h3, h4, h5, h6, p, label, a, button, input, td, th, label, img, ul, ol, li, .hl, blockquote {
+h1, h2, h3, h4, h5, h6, p, label, a, button, input, td, th, label, img, ul, ol, li, .hl, blockquote, .lowTemp, .highTemp {
   font-family: sans-serif, Helvetica Neue, Roboto, SF-pro;
 }
 
@@ -896,6 +896,41 @@ footer .container-social .nav--social .feather {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.varColor {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 18px;
+  margin-bottom: 10px;
+}
+.varColor .bar {
+  background: red;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid black;
+  background: -moz-linear-gradient(left, #101557 0%, #f4ebc8 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #101557), color-stop(100%, #f4ebc8));
+  background: -webkit-linear-gradient(left, #101557 0%, #f4ebc8 100%);
+  background: -o-linear-gradient(left, #101557 0%, #f4ebc8 100%);
+  background: -ms-linear-gradient(left, #101557 0%, #f4ebc8 100%);
+  background: linear-gradient(to right, #101557 0%, #f4ebc8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f85032", endColorstr="#f02f17", GradientType=1 );
+}
+.varColor .lowTemp {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.varColor .highTemp {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @media screen and (max-width: 800px) {
