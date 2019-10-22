@@ -178,7 +178,7 @@ a {
         bottom: 0;
 
         blockquote {
-            font-family: UI Italic;
+            font-family: UI Lightitalic;
             display: block;
             margin: auto;
             position: relative;
@@ -451,6 +451,7 @@ button, .btn, input[type=submit] {
     letter-spacing: 1.25px;
     font-size: 14px;
     background: none;
+    cursor: pointer;
 }
 
 .btn-large {
@@ -461,6 +462,22 @@ button, .btn, input[type=submit] {
 .btn-complete {
     width: 100%;
     margin: auto;
+}
+
+.btn-shop {
+    background: $dark !important;
+    margin-top: 20px;
+    color: white;
+    transition: $transition;
+
+    &:hover {
+        background: darken($dark, 5) !important;
+        transition: $transition;
+    }
+
+    &:active {
+        background: darken($dark, 15) !important;
+    }
 }
 
 .btn-primary {
