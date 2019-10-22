@@ -1,24 +1,3 @@
-@import 'vars';
-
-#section1{
-    h2 {text-transform: uppercase;}
-
-	.container{
-		.flex-container{
-			display: -webkit-flex;
-			display: flex;
-			-webkit-flex-flow: row wrap;
-			flex-flow: row wrap;
-
-            .flex-item {
-                -webkit-flex: 1 0 45%;
-                flex: 1 0 45%;
-                padding: $pd1;
-            }
-        }
-    }
-}
-
 #section2 {
 	background: rgba(black, .4);
 	background-image: url('../img/bg/pattern1.jpg'); // Nope
@@ -124,35 +103,6 @@
         text-transform: uppercase;
     }
 }
-
-.header-banner {
-	display: block;
-	text-align: center;
-	padding-top: 50px;
-	overflow: hidden;
-
-	img {
-		display: block;
-		margin: auto;
-		height: 180px;
-	}
-
-	p {
-		font-size: 30px;
-		line-height: 35px;
-		width: 80%;
-		margin: auto;
-		color: white;
-		text-shadow: $text-shadow;
-	}
-
-	h1 {
-
-		text-align: center;
-		color: white !important;
-	}
-}
-
 
 #activities {
 	display: flex;
