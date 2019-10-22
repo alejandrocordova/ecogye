@@ -111,7 +111,7 @@ p {
   display: block;
   font-size: 16px;
   font-weight: normal;
-  color: #333;
+  color: #575757;
   line-height: 16pt;
 }
 
@@ -121,10 +121,10 @@ a {
 }
 
 .brand-text {
-  font-family: UI Bold !important;
+  font-family: UI Light !important;
   text-transform: uppercase;
   padding: 0 !important;
-  font-size: 65px;
+  font-size: 55px;
 }
 
 #m-dics {
@@ -137,6 +137,14 @@ a {
   max-width: 1366px;
   margin: auto;
   padding: 32pt 32pt 32pt 32pt;
+}
+
+.hl {
+  text-transform: uppercase;
+  font-family: UI Normal;
+  color: #363636;
+  font-size: 11px;
+  letter-spacing: 3px;
 }
 
 .full-height {
@@ -153,7 +161,7 @@ a {
   bottom: 0;
 }
 .full-height .jumbotron blockquote {
-  font-family: UI Normal;
+  font-family: UI Italic;
   display: block;
   margin: auto;
   position: relative;
@@ -161,7 +169,6 @@ a {
   color: #575757;
   font-size: 22px;
   font-weight: 200;
-  font-style: italic;
   line-height: 24pt;
 }
 .full-height .jumbotron blockquote::before {
@@ -767,6 +774,7 @@ footer {
 }
 footer .hl {
   text-transform: uppercase;
+  font-family: UI Normal;
   color: white;
   font-size: 11px;
   letter-spacing: 3px;

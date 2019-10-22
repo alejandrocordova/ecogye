@@ -1,7 +1,7 @@
 // Colors
 $primary: #41866B;
 $black: #101010;
-$dark: #333;
+$dark: #363636;
 $footercolor: #17393A;
 $light: #575757;
 $link: #5D58FC;
@@ -131,7 +131,7 @@ p {
     display: block;
 	font-size: 16px;
 	font-weight: normal;
-	color: $dark;
+	color: $light;
 	line-height: $pd2;
 }
 
@@ -141,10 +141,10 @@ a {
 }
 
 .brand-text {
-	font-family: UI Bold !important;
+	font-family: UI Light !important;
     text-transform: uppercase;
 	padding: 0 !important;
-	font-size: 65px;
+	font-size: 55px;
 }
 
 #m-dics { display: none; }
@@ -155,6 +155,14 @@ a {
     max-width: 1366px;
     margin: auto;
     padding: $pd4 $pd4 $pd4 $pd4;
+}
+
+.hl {
+    text-transform: uppercase;
+    font-family: UI Normal;
+    color: $dark;
+    font-size: 11px;
+    letter-spacing: 3px;
 }
 
 .full-height {
@@ -170,7 +178,7 @@ a {
         bottom: 0;
 
         blockquote {
-            font-family: UI Normal;
+            font-family: UI Italic;
             display: block;
             margin: auto;
             position: relative;
@@ -179,7 +187,6 @@ a {
             color: $light;
             font-size: 22px;
             font-weight: 200;
-            font-style: italic;
             line-height: $pd3;
 
             &::before {
@@ -844,6 +851,7 @@ footer {
 
     .hl {
         text-transform: uppercase;
+        font-family: UI Normal;
         color: white;
         font-size: 11px;
         letter-spacing: 3px;
