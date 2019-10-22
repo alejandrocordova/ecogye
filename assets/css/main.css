@@ -73,7 +73,7 @@ header {
   src: url("../fonts/BebasNeue-Regular.otf");
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: UI Bold;
+  font-family: UI Semibold;
   letter-spacing: 0.25px;
   color: #101010;
   padding-bottom: 15px;
@@ -121,7 +121,8 @@ a {
 }
 
 .brand-text {
-  font-family: logofont !important;
+  font-family: UI Bold !important;
+  text-transform: uppercase;
   padding: 0 !important;
   font-size: 65px;
 }
