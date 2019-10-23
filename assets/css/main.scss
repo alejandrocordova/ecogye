@@ -59,6 +59,10 @@ header {
     background-attachment: fixed;
 }
 
+.body-jumbotron {
+    display: none;
+}
+
 .navbar {
     display: block;
     overflow: hidden;
@@ -177,31 +181,32 @@ a {
         position: absolute;
         bottom: 0;
 
-        blockquote {
-            font-family: UI Lightitalic;
-            display: block;
-            margin: auto;
-            position: relative;
-            padding-bottom: $pd1;
+    }
+}
 
-            color: $light;
-            font-size: 22px;
-            font-weight: 200;
-            line-height: $pd3;
+blockquote {
+    font-family: UI Lightitalic;
+    display: block;
+    margin: auto;
+    position: relative;
+    padding-bottom: $pd1;
 
-            &::before {
-                content: '\f10d';
-                font-family: 'Font Awesome 5 Pro Bold';
-                font-size: 30px;
-                padding-right: 10px;
-            }
+    color: $light;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: $pd3;
 
-            .author {
-                position: absolute;
-                right: 0;
-                margin-top: 5px;
-            }
-        }
+    &::before {
+        content: '\f10d';
+        font-family: 'Font Awesome 5 Pro Bold';
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    .author {
+        position: absolute;
+        right: 0;
+        margin-top: 5px;
     }
 }
 
@@ -533,105 +538,6 @@ button, .btn, input[type=submit] {
         }
 }
 
-.slide{
-	position: relative;
-	width: 100%;
-	max-width: 1366px;
-	margin-left: auto;
-	margin-right: auto;
-
-	ul, li {
-		list-style: none;
-		position: relative;
-    }
-
-	.slideshow {
-		width: 100%;
-		position: relative;
-
-		.slider{
-			ul, li {
-				width: 100%;
-
-				img {width: 100% !important;}
-            }
-        }
-
-		.caption{
-			position: absolute;
-			width: 100%;
-			height: 99%;
-			top: 0;
-			left: 0;
-			color: #fff !important;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-        }
-
-		.blur{
-			padding: 20px 30px;
-			text-align: center;
-			background: rgba(darken(#FFF, 5%), .8);
-			backdrop-filter: blur(3px);
-			-o-backdrop-filter: blur(3px);
-			-moz-backdrop-filter: blur(3px);
-			-webkit-backdrop-filter: blur(3px);
-			box-shadow: 0px 2px 15px rgba(lighten($black, 4%), .9);
-			border-radius: 10px;
-			border-top: 1px solid rgba(white, 0.8);
-			border-bottom: 1px solid rgba(#777, 0.8);
-
-			h1 a{
-				color: $black;
-				text-align: center;
-				text-shadow: 0 1px 0 #fff;
-                text-shadow: 0 2px 3px #000 inset;
-            }
-
-			p {
-				color: $black;
-				font-size: 22px;
-				text-align: center;
-				text-shadow: 0 1px 0 #fff;
-                text-shadow: 0 2px 3px #000 inset;
-            }
-        }
-
-    }
-
-	.pagination{
-		position: absolute;
-		top: 100%;
-		display: flex;
-		justify-content: center;
-		width: 100%;
-
-		li{
-			font-size: 15px;
-			margin: 2px 5px;
-			color: #bcbcbc;
-            cursor: pointer;
-        }
-    }
-
-	.left, .right {
-		position: absolute;
-		top: 0;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		font-size: 40px;
-		color: #FFF;
-		z-index: 2;
-		text-shadow: 0px 2px 5px rgba($black, 0.8);
-    }
-
-	.left {left: 5%;}
-	.right {right: 5%}
-}
-
 .b-dics {
     width     : 100%;
     max-width : 100%;
@@ -900,6 +806,16 @@ footer {
 
 @media screen and (max-width: 800px) {
 
+    header .jumbotron {
+        display: none;
+    }
+
+    .body-jumbotron {
+        display: block !important;
+        background: #dcdcdc;
+        width: 100%;
+    }
+
 	#m-dics { display: block; }
 
 	#d-dics { display: none !important; }
@@ -1009,4 +925,23 @@ footer {
 
 
 	.btn--large {width: 90%;}
+}
+
+@media screen and (max-width: 500px) {
+    .shop {
+        .flex-container {
+            display: block !important;
+
+            .flex-item .card {
+                display: block !important;
+                background: block;
+                overflow:hidden;
+                flex: none;
+
+                .card-header {
+
+                }
+            }
+        }
+    }
 }
