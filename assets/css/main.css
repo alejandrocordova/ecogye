@@ -816,6 +816,10 @@ footer .container-social .nav-social .feather {
     text-align: center;
   }
 
+  #presentation .container .flex-container {
+    display: block;
+  }
+
   #section3 .container .flex-container {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
@@ -879,6 +883,11 @@ footer .container-social .nav-social .feather {
     overflow: hidden;
     flex: none;
     width: 100%;
+  }
+}
+@media screen and (max-width: 787px) {
+  #objetives .container .flex-container {
+    display: block;
   }
 }
 

@@ -888,6 +888,12 @@ footer {
 		}
 	}
 
+    #presentation {
+        .container .flex-container {
+            display: block;
+        }
+    }
+
 	#section3 {
 		.container {
 			.flex-container {
@@ -958,6 +964,14 @@ footer {
 
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 787px) {
+    #objetives {
+        .container .flex-container {
+            display: block;
         }
     }
 }
