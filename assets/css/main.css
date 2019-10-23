@@ -757,7 +757,11 @@ footer .container-social .nav-social .feather {
     padding-top: 10px !important;
   }
   .header-banner .brand-text {
-    font-size: 30px;
+    font-size: 50px;
+  }
+  .header-banner p {
+    font-size: 25px;
+    line-height: 40px;
   }
 
   .varColor {
