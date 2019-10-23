@@ -810,10 +810,15 @@ footer {
         display: none;
     }
 
+    .container {
+        padding: $pd2 $pd2 $pd2 $pd2;
+    }
+
     .body-jumbotron {
         display: block !important;
         background: #dcdcdc;
         width: 100%;
+        padding-bottom: 20px;
     }
 
 	#m-dics { display: block; }
@@ -937,6 +942,8 @@ footer {
 
 @media screen and (max-width: 500px) {
     .shop {
+        display: block;
+        width: 100%;
         .flex-container {
             display: block !important;
 
@@ -945,6 +952,7 @@ footer {
                 background: block;
                 overflow:hidden;
                 flex: none;
+                width: 100%;
 
                 .card-header {
 

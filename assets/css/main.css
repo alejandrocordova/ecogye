@@ -739,10 +739,15 @@ footer .container-social .nav-social .feather {
     display: none;
   }
 
+  .container {
+    padding: 16pt 16pt 16pt 16pt;
+  }
+
   .body-jumbotron {
     display: block !important;
     background: #dcdcdc;
     width: 100%;
+    padding-bottom: 20px;
   }
 
   #m-dics {
@@ -861,6 +866,10 @@ footer .container-social .nav-social .feather {
   }
 }
 @media screen and (max-width: 500px) {
+  .shop {
+    display: block;
+    width: 100%;
+  }
   .shop .flex-container {
     display: block !important;
   }
@@ -869,6 +878,7 @@ footer .container-social .nav-social .feather {
     background: block;
     overflow: hidden;
     flex: none;
+    width: 100%;
   }
 }
 
