@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" href="favicon.png">
 	<link rel="shortcut icon" href="favicon.png">
 	<title>Tienda | ECOGYE</title>
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
 	<link rel="stylesheet" href="assets/fonts/uifont.css">
@@ -17,28 +17,48 @@
 	<script src="assets/js/dics.js"></script>
 </head>
 <body>
-	<header class="full-height">
-		<nav class="navbar">
-			<ul class="logo">
-				<li><a href="index.html">ECOGYE</a></li>
-			</ul>
+	<div id="Sidenav" class="sidenav">
+	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li><a href="index.html"><i data-feather="home" style="height: 18px;"></i> Inicio</a></li>
+		<li><a href="activities.html"><i data-feather="activity" style="height: 18px;"></i> Actividades</a></li>
+		<li><a href="shop.html"><i data-feather="shopping-cart" style="height: 18px;"></i> Tienda</a></li>
+		<li><a href="https://github.com/alejandrocordova/ecogye"><i data-feather="github" style="height: 18px;"></i> proyecto</a></li>
+	</div>
+	<div id="main">
+		<header class="showcase">
+			<nav class="navbar">
+				<ul class="logo">
+					<li><a href="index.html">ECOGYE</a></li>
+				</ul>
 
-			<ul class="list">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="activities.html" class="active">Actividades</a></li>
-				<li><a href="shop.html"><i data-feather="shopping-cart" style="height: 18px;"></i></a></li>
-				<li><a href="https://github.com/alejandrocordova/ecogye"><i data-feather="github" style="height: 18px;"></i></a></li>
-			</ul>
-		</nav>
+				<ul class="list">
+					<ul class="list">
+						<li>
+							<a><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+						</li>
+					</ul>
+				</ul>
+			</nav>
 
-		<div class="header-banner">
-			<img width="130px" src="assets/img/brand_logo.svg" alt="">
-			<h1 class="brand-text">TIENDA ECOGYE</h1>
+			<div class="showcase-inner">
+				<img width="130px" src="assets/img/brand_logo.svg" alt="">
+				<h1 class="brand-text">ECOGYE</h1>
+				<p>Recuperar Guayaquil está al alcance de todos.</p>
+			</div>
+			<br>
+			<div class="blockquote">
+				<div class="container">
+					<blockquote>
+						Verde es el color principal del mundo, y a partir del cual surge su hermosura.
+						<br>
 
-			<p>Recuperar Guayaquil está al alcance de todos.</p>
-		</div>
-		<br>
-		<div class="jumbotron">
+						<span class="author"> ––Pedro Calderón de la Barca</span>
+					</blockquote>
+				</div>
+			</div>
+		</header>
+
+		<div class="body-blockquote">
 			<div class="container">
 				<blockquote>
 					 La naturaleza siempre lucha por preservar el universo.
@@ -48,190 +68,194 @@
 				</blockquote>
 			</div>
 		</div>
-	</header>
 
-	<div class="body-jumbotron">
 		<div class="container">
-			<blockquote>
-				 La naturaleza siempre lucha por preservar el universo.
+			<div class="shop">
+
+				<div class="flex-container">
+					<div class="flex-item card">
+						<div class="card-header">
+							<h5>Camiseta Boro Boro</h5>
+						</div>
+
+						<div class="card-body">
+							<img src="assets/img/shop/t-shirt1.jpg">
+						</div>
+
+						<div class="card-footer">
+							<p><strong>Color:</strong> Gris Azulado</p><br>
+							<p><strong>Logo:</strong> Gris Claro</p><br>
+							<p><strong>Precio:</strong>$12</p> <button class="btn btn-complete btn-shop">Comprar</button>
+						</div>
+					</div>
+
+					<div class="flex-item card">
+						<div class="card-header">
+							<h5>Camiseta Boro Boro</h5>
+						</div>
+
+						<div class="card-body">
+							<img src="assets/img/shop/t-shirt2.jpg">
+						</div>
+
+						<div class="card-footer">
+							<p><strong>Color:</strong> Gris</p><br>
+							<p><strong>Logo:</strong> Gris Claro</p><br>
+							<p><strong>Precio:</strong>$12</p><br> <button class="btn btn-complete btn-shop">Comprar</button>
+						</div>
+					</div>
+
+					<div class="flex-item card">
+						<div class="card-header">
+							<h5>Camiseta Boro Boro</h5>
+						</div>
+
+						<div class="card-body">
+							<img src="assets/img/shop/t-shirt3.jpg">
+						</div>
+
+						<div class="card-footer">
+							<p><strong>Color:</strong> Gris Claro</p><br>
+							<p><strong>Logo:</strong> A color</p><br>
+							<p><strong>Precio:</strong>$12</p><br> <button class="btn btn-complete btn-shop">Comprar</button>
+						</div>
+					</div>
+
+					<div class="flex-item card">
+						<div class="card-header">
+							<h5>Camiseta Boro Boro</h5>
+						</div>
+
+						<div class="card-body">
+							<img src="assets/img/shop/t-shirt4.jpg">
+						</div>
+
+						<div class="card-footer">
+							<p><strong>Color:</strong> Negro</p><br>
+							<p><strong>Logo:</strong> a color</p><br>
+							<p><strong>Precio:</strong>$12</p> <br><button class="btn btn-complete btn-shop">Comprar</button>
+						</div>
+					</div>
+
+					<div class="flex-item card">
+						<div class="card-header">
+							<h5>Camiseta Boro Boro</h5>
+						</div>
+
+						<div class="card-body">
+							<img src="assets/img/shop/t-shirt5.jpg">
+						</div>
+
+						<div class="card-footer">
+							<p><strong>Color:</strong> Gris Claro</p><br>
+							<p><strong>Logo:</strong> Negro</p><br>
+							<p><strong>Precio:</strong> $12</p><br>
+							<button class="btn btn-complete btn-shop">Comprar</button>
+						</div>
+					</div>
+
+					<div class="flex-item card">
+						<div class="card-header">
+							<h5>Bolsa de tela</h5>
+						</div>
+
+						<div class="card-body">
+							<img src="assets/img/shop/bag.jpg">
+						</div>
+
+						<div class="card-footer">
+							<br>
+							<p><strong>Color:</strong> Blanco</p><br>
+							<p><strong>Logo:</strong> A color</p><br>
+							<p><strong>Precio:</strong> $2,50</p>
+							<button class="btn btn-complete btn-shop">Comprar</button>
+						</div>
+					</div>
+
+					<div class="flex-item card">
+						<div class="card-header">
+							<h5>Bolsa de papel</h5>
+						</div>
+
+						<div class="card-body">
+							<img src="assets/img/shop/bag1.jpg">
+						</div>
+
+						<div class="card-footer">
+							<br>
+							<p><strong>Color:</strong></p><br>
+							<p><strong>Logo:</strong> A color</p><br>
+							<p><strong>Precio:</strong> $1,50</p>
+							<button class="btn btn-complete btn-shop">Comprar</button>
+						</div>
+					</div>
+
+					<div class="flex-item card">
+						<div class="card-header">
+							<h5>Bolsa de papel</h5>
+						</div>
+
+						<div class="card-body">
+							<img src="assets/img/shop/bag2.jpg">
+						</div>
+
+						<div class="card-footer">
+							<br>
+							<p><strong>Color:</strong></p><br>
+							<p><strong>Logo:</strong> A color</p><br>
+							<p><strong>Precio:</strong> $1</p>
+							<button class="btn btn-complete btn-shop">Comprar</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="section5">
+			<div class="container">
+				<h2 style="color: white;">Suscribete para recibir noticias y promociones</h2>
+				<input type="email" placeholder="tu.correo@ejemplo.com">
 				<br>
-
-				<span class="author"> ––Robert Boyle</span>
-			</blockquote>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="shop">
-
-			<div class="flex-container">
-				<div class="flex-item card">
-					<div class="card-header">
-						<h5>Camiseta Boro Boro</h5>
-					</div>
-
-					<div class="card-body">
-						<img src="assets/img/shop/t-shirt1.jpg">
-					</div>
-
-					<div class="card-footer">
-						<p><strong>Color:</strong> Gris Azulado</p><br>
-						<p><strong>Logo:</strong> Gris Claro</p><br>
-						<p><strong>Precio:</strong>$12</p> <button class="btn btn-complete btn-shop">Comprar</button>
-					</div>
-				</div>
-
-				<div class="flex-item card">
-					<div class="card-header">
-						<h5>Camiseta Boro Boro</h5>
-					</div>
-
-					<div class="card-body">
-						<img src="assets/img/shop/t-shirt2.jpg">
-					</div>
-
-					<div class="card-footer">
-						<p><strong>Color:</strong> Gris</p><br>
-						<p><strong>Logo:</strong> Gris Claro</p><br>
-						<p><strong>Precio:</strong>$12</p><br> <button class="btn btn-complete btn-shop">Comprar</button>
-					</div>
-				</div>
-
-				<div class="flex-item card">
-					<div class="card-header">
-						<h5>Camiseta Boro Boro</h5>
-					</div>
-
-					<div class="card-body">
-						<img src="assets/img/shop/t-shirt3.jpg">
-					</div>
-
-					<div class="card-footer">
-						<p><strong>Color:</strong> Gris Claro</p><br>
-						<p><strong>Logo:</strong> A color</p><br>
-						<p><strong>Precio:</strong>$12</p><br> <button class="btn btn-complete btn-shop">Comprar</button>
-					</div>
-				</div>
-
-				<div class="flex-item card">
-					<div class="card-header">
-						<h5>Camiseta Boro Boro</h5>
-					</div>
-
-					<div class="card-body">
-						<img src="assets/img/shop/t-shirt4.jpg">
-					</div>
-
-					<div class="card-footer">
-						<p><strong>Color:</strong> Negro</p><br>
-						<p><strong>Logo:</strong> a color</p><br>
-						<p><strong>Precio:</strong>$12</p> <br><button class="btn btn-complete btn-shop">Comprar</button>
-					</div>
-				</div>
-
-				<div class="flex-item card">
-					<div class="card-header">
-						<h5>Camiseta Boro Boro</h5>
-					</div>
-
-					<div class="card-body">
-						<img src="assets/img/shop/t-shirt5.jpg">
-					</div>
-
-					<div class="card-footer">
-						<p><strong>Color:</strong> Gris Claro</p><br>
-						<p><strong>Logo:</strong> Negro</p><br>
-						<p><strong>Precio:</strong> $12</p><br>
-						<button class="btn btn-complete btn-shop">Comprar</button>
-					</div>
-				</div>
-
-				<div class="flex-item card">
-					<div class="card-header">
-						<h5>Bolsa de tela</h5>
-					</div>
-
-					<div class="card-body">
-						<img src="assets/img/shop/bag.jpg">
-					</div>
-
-					<div class="card-footer">
-						<br>
-						<p><strong>Color:</strong> Blanco</p><br>
-						<p><strong>Logo:</strong> A color</p><br>
-						<p><strong>Precio:</strong> $2,50</p>
-						<button class="btn btn-complete btn-shop">Comprar</button>
-					</div>
-				</div>
-
-				<div class="flex-item card">
-					<div class="card-header">
-						<h5>Bolsa de papel</h5>
-					</div>
-
-					<div class="card-body">
-						<img src="assets/img/shop/bag1.jpg">
-					</div>
-
-					<div class="card-footer">
-						<br>
-						<p><strong>Color:</strong></p><br>
-						<p><strong>Logo:</strong> A color</p><br>
-						<p><strong>Precio:</strong> $1,50</p>
-						<button class="btn btn-complete btn-shop">Comprar</button>
-					</div>
-				</div>
-
-				<div class="flex-item card">
-					<div class="card-header">
-						<h5>Bolsa de papel</h5>
-					</div>
-
-					<div class="card-body">
-						<img src="assets/img/shop/bag2.jpg">
-					</div>
-
-					<div class="card-footer">
-						<br>
-						<p><strong>Color:</strong></p><br>
-						<p><strong>Logo:</strong> A color</p><br>
-						<p><strong>Precio:</strong> $1</p>
-						<button class="btn btn-complete btn-shop">Comprar</button>
-					</div>
-				</div>
-
+				<input type="submit" class="btn btn-large btn-primary btn-send" value="Suscribirse">
 			</div>
 		</div>
-	</div>
+		<footer>
+			<div class="container">
+				<div class="container-copy">
+					<p class="hl">ECOGYE nos preocupamos por usted y el medio ambiente.</p>
+				</div>
 
-	<div id="section5">
-		<div class="container">
-			<h1>Suscribete para recibir noticias y promociones</h1>
-			<input type="email" placeholder="tu.correo@ejemplo.com">
-			<br>
-			<input type="submit" class="btn btn-large btn-primary btn-send" value="Suscribirse">
-		</div>
+				<div class="container-social">
+					<nav class="nav-social">
+						<ul>
+							<li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
+							<li><a href="https://www.facebook.com/ECOGye-108276580595340/" target="_blank"><i data-feather="facebook"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCqc0dVLoK975Gp4N2V-Uhwg?fbclid=IwAR2UITlh7f6DoEDMT_hyIxNiHusygDbeWeIC5nl_sgboC0F01XAK1knY0ZQ"target="_blank"><i data-feather="youtube"></i></a></li>
+							<li><a href="https://www.instagram.com/eco_gye/?hl=es-la"target="_blank"><i data-feather="instagram"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
 	</div>
-	<footer>
-		<div class="container">
-			<div class="container-copy">
-				<p class="hl">ECOGYE nos preocupamos por usted y el medio ambiente.</p>
-			</div>
-
-			<div class="container-social">
-				<nav class="nav-social">
-					<ul>
-						<li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
-						<li><a href="https://www.facebook.com/ECOGye-108276580595340/" target="_blank"><i data-feather="facebook"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCqc0dVLoK975Gp4N2V-Uhwg?fbclid=IwAR2UITlh7f6DoEDMT_hyIxNiHusygDbeWeIC5nl_sgboC0F01XAK1knY0ZQ"target="_blank"><i data-feather="youtube"></i></a></li>
-						<li><a href="https://www.instagram.com/eco_gye/?hl=es-la"target="_blank"><i data-feather="instagram"></i></a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</footer>
 	<script>
 		feather.replace();
+
+		function openNav() {
+			document.getElementById("Sidenav").style.width = "200px";
+			document.getElementById("main").style.marginLeft = "200px";
+			document.getElementById("main").style.padding = "16px";
+			document.getElementById("main").style.background = "#41866B";
+			document.getElementById("main").style.overflow = "hidden";
+		}
+
+		function closeNav() {
+			document.getElementById("Sidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.getElementById("main").style.padding = "0";
+			document.getElementById("main").style.overflow = "visible";
+		}
 	</script>
 </body>
 </html>

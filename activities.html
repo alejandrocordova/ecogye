@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" href="favicon.png">
 	<link rel="shortcut icon" href="favicon.png">
 	<title>Actividades | ECOGYE</title>
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
 	<link rel="stylesheet" href="assets/fonts/uifont.css">
@@ -18,27 +18,47 @@
 
 </head>
 <body>
-	<header class="full-height">
-		<nav class="navbar">
-			<ul class="logo">
-				<li><a href="index.html">ECOGYE</a></li>
-			</ul>
+	<div id="Sidenav" class="sidenav">
+	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li><a href="index.html"><i data-feather="home" style="height: 18px;"></i> Inicio</a></li>
+		<li><a href="activities.html"><i data-feather="activity" style="height: 18px;"></i> Actividades</a></li>
+		<li><a href="shop.html"><i data-feather="shopping-cart" style="height: 18px;"></i> Tienda</a></li>
+		<li><a href="https://github.com/alejandrocordova/ecogye"><i data-feather="github" style="height: 18px;"></i> Proyecto</a></li>
+	</div>
+	<div id="main">
+		<header class="showcase">
+			<nav class="navbar">
+				<ul class="logo">
+					<li><a href="index.html">ECOGYE</a></li>
+				</ul>
 
-			<ul class="list">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="activities.html" class="active">Actividades</a></li>
-				<li><a href="shop.html"><i data-feather="shopping-cart" style="height: 18px;"></i></a></li>
-				<li><a href="https://github.com/alejandrocordova/ecogye"><i data-feather="github" style="height: 18px;"></i></a></li>
-			</ul>
-		</nav>
+				<ul class="list">
+					<ul class="list">
+						<li>
+							<a><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+						</li>
+					</ul>
+				</ul>
+			</nav>
 
-		<div class="header-banner">
-			<img width="130px" src="assets/img/brand_logo.svg" alt="">
-			<h1 class="brand-text">ACTIVIDADES ECOGYE</h1>
-			<p>Recuperar Guayaquil está al alcance de todos.</p>
-		</div>
-		<br>
-		<div class="jumbotron">
+			<div class="showcase-inner">
+				<img width="130px" src="assets/img/brand_logo.svg" alt="">
+				<h1 class="brand-text">ECOGYE</h1>
+				<p>Recuperar Guayaquil está al alcance de todos.</p>
+			</div>
+			<br>
+			<div class="blockquote">
+				<div class="container">
+					<blockquote>
+						Verde es el color principal del mundo, y a partir del cual surge su hermosura.
+						<br>
+
+						<span class="author"> ––Pedro Calderón de la Barca</span>
+					</blockquote>
+				</div>
+			</div>
+		</header>
+		<div class="body-blockquote">
 			<div class="container">
 				<blockquote>
 					 Verde es el color principal del mundo, y a partir del cual surge su hermosura.
@@ -48,75 +68,79 @@
 				</blockquote>
 			</div>
 		</div>
-	</header>
-	<div class="body-jumbotron">
-		<div class="container">
-			<blockquote>
-				 Verde es el color principal del mundo, y a partir del cual surge su hermosura.
+
+		<div id="section1">
+			<div class="container">
+				<div class="flex-container">
+					<div class="flex-item">
+						<h2>Actividades</h2>
+						<ul>
+							<li>Facilitar información relevante y eficiente para crear consciencia sobre el calentamiento global.</li>
+							<br>
+							<li>Atraer mediante campañas y exposiciones en instituciones educativas.</li>
+							<br>
+							<li>Ofrecer actividades que enseñen a reducir los desechos, así como mantener limpio nuestro entorno y ser mas preocupados por la naturaleza, el cambio climático y mitigar los daños del calentamiento global.</li>
+							<br>
+							<li>Comercializar productos que sean de materiales orgánicos y duraderos.</li>
+							<br>
+							<li>Establecer áreas naturales financiados con las ganancias obtenidas de los productos comercializados.</li>
+							<br>
+							<li>Invitar a todo aquel que desee colaborar con ideas o propuestas que ayuden a motivar a más gente y mejorar de manera continua.</li>
+						</ul>
+					</div>
+
+					<div class="flex-item">
+						<iframe height="100%" width="100%" src="https://www.youtube.com/embed/6HmP6kQ1TnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="section5">
+			<div class="container">
+				<h2 style="color: white;">Suscribete para recibir noticias y promociones</h2>
+				<input type="email" placeholder="tu.correo@ejemplo.com">
 				<br>
-
-				<span class="author"> ––Pedro Calderón de la Barca</span>
-			</blockquote>
+				<input type="submit" class="btn btn-large btn-primary btn-send" value="Suscribirse">
+			</div>
 		</div>
-	</div>
-
-	<div id="section1">
-		<div class="container">
-			<div class="flex-container">
-				<div class="flex-item">
-					<h2>Actividades</h2>
-					<ul>
-						<li>Facilitar información relevante y eficiente para crear consciencia sobre el calentamiento global.</li>
-						<br>
-						<li>Atraer mediante campañas y exposiciones en instituciones educativas.</li>
-						<br>
-						<li>Ofrecer actividades que enseñen a reducir los desechos, así como mantener limpio nuestro entorno y ser mas preocupados por la naturaleza, el cambio climático y mitigar los daños del calentamiento global.</li>
-						<br>
-						<li>Comercializar productos que sean de materiales orgánicos y duraderos.</li>
-						<br>
-						<li>Establecer áreas naturales financiados con las ganancias obtenidas de los productos comercializados.</li>
-						<br>
-						<li>Invitar a todo aquel que desee colaborar con ideas o propuestas que ayuden a motivar a más gente y mejorar de manera continua.</li>
-					</ul>
+		<footer>
+			<div class="container">
+				<div class="container-copy">
+					<p class="hl">ECOGYE nos preocupamos por usted y el medio ambiente.</p>
 				</div>
 
-				<div class="flex-item">
-					<iframe height="100%" width="100%" src="https://www.youtube.com/embed/6HmP6kQ1TnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="container-social">
+					<nav class="nav-social">
+						<ul>
+							<li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
+							<li><a href="https://www.facebook.com/ECOGye-108276580595340/" target="_blank"><i data-feather="facebook"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCqc0dVLoK975Gp4N2V-Uhwg?fbclid=IwAR2UITlh7f6DoEDMT_hyIxNiHusygDbeWeIC5nl_sgboC0F01XAK1knY0ZQ"target="_blank"><i data-feather="youtube"></i></a></li>
+							<li><a href="https://www.instagram.com/eco_gye/?hl=es-la"target="_blank"><i data-feather="instagram"></i></a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
-
-
-	<div id="section5">
-		<div class="container">
-			<h1>Suscribete para recibir noticias y promociones</h1>
-			<input type="email" placeholder="tu.correo@ejemplo.com">
-			<br>
-			<input type="submit" class="btn btn-large btn-primary btn-send" value="Suscribirse">
-		</div>
-	</div>
-	<footer>
-		<div class="container">
-			<div class="container-copy">
-				<p class="hl">ECOGYE nos preocupamos por usted y el medio ambiente.</p>
-			</div>
-
-			<div class="container-social">
-				<nav class="nav-social">
-					<ul>
-						<li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
-						<li><a href="https://www.facebook.com/ECOGye-108276580595340/" target="_blank"><i data-feather="facebook"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCqc0dVLoK975Gp4N2V-Uhwg?fbclid=IwAR2UITlh7f6DoEDMT_hyIxNiHusygDbeWeIC5nl_sgboC0F01XAK1knY0ZQ"target="_blank"><i data-feather="youtube"></i></a></li>
-						<li><a href="https://www.instagram.com/eco_gye/?hl=es-la"target="_blank"><i data-feather="instagram"></i></a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</footer>
-	</footer>
 	<script>
 		feather.replace();
+
+		function openNav() {
+			document.getElementById("Sidenav").style.width = "200px";
+			document.getElementById("main").style.marginLeft = "200px";
+			document.getElementById("main").style.padding = "16px";
+			document.getElementById("main").style.background = "#41866B";
+			document.getElementById("main").style.overflow = "hidden";
+		}
+
+		function closeNav() {
+			document.getElementById("Sidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.getElementById("main").style.padding = "0";
+			document.getElementById("main").style.overflow = "visible";
+		}
 	</script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 	<link rel="apple-touch-icon" href="favicon.png">
 	<link rel="shortcut icon" href="favicon.png">
 	<title>ECOGYE</title>
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
 	<link rel="stylesheet" href="assets/fonts/uifont.css">
@@ -68,28 +68,44 @@
 	</script>
 </head>
 <body>
-	<header class="full-height">
-		<nav class="navbar">
-			<ul class="logo">
-				<li><a href="index.html">ECOGYE</a></li>
-			</ul>
+	<div id="Sidenav" class="sidenav">
+	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<li><a href="index.html"><i data-feather="home" style="height: 18px;"></i> Inicio</a></li>
+		<li><a href="activities.html"><i data-feather="activity" style="height: 18px;"></i> Actividades</a></li>
+		<li><a href="shop.html"><i data-feather="shopping-cart" style="height: 18px;"></i> Tienda</a></li>
+		<li><a href="https://github.com/alejandrocordova/ecogye"><i data-feather="github" style="height: 18px;"></i> Proyecto</a></li>
+	</div>
+	<div id="main">
+		<header class="showcase">
+			<nav class="navbar">
+				<ul class="logo">
+					<li><a href="index.html">ECOGYE</a></li>
+				</ul>
+				<ul class="list">
+					<li>
+						<a><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+					</li>
+				</ul>
+			</nav>
 
-			<ul class="list">
-				<li><a href="index.html" class="active">Inicio</a></li>
-				<li><a href="activities.html">Actividades</a></li>
-				<li><a href="shop.html"><i data-feather="shopping-cart" style="height: 18px;"></i></a></li>
-				<li><a href="https://github.com/alejandrocordova/ecogye"><i data-feather="github" style="height: 18px;"></i></a></li>
+			<div class="showcase-inner">
+				<img width="130px" src="assets/img/brand_logo.svg" alt="">
+				<h1 class="brand-text">ECOGYE</h1>
+				<p>Recuperar Guayaquil está al alcance de todos.</p>
+			</div>
+			<br>
+			<div class="blockquote">
+				<div class="container">
+					<blockquote>
+						La naturaleza no es un lugar para visitar. Es el hogar.
+						<br>
 
-			</ul>
-		</nav>
-
-		<div class="header-banner">
-			<img width="130px" src="assets/img/brand_logo.svg" alt="">
-			<h1 class="brand-text">ECOGYE</h1>
-			<p>Recuperar Guayaquil está al alcance de todos.</p>
-		</div>
-		<br>
-		<div class="jumbotron">
+						<span class="author"> ––Gary Sherman Snyder</span>
+					</blockquote>
+				</div>
+			</div>
+		</header>
+		<div class="body-blockquote">
 			<div class="container">
 				<blockquote>
 					La naturaleza no es un lugar para visitar. Es el hogar.
@@ -99,164 +115,169 @@
 				</blockquote>
 			</div>
 		</div>
-	</header>
-	<div class="body-jumbotron">
-		<div class="container">
-			<blockquote>
-				La naturaleza no es un lugar para visitar. Es el hogar.
-				<br>
+	<!-- Como trabaja ECOGYE -->
+		<div id="presentation">
+			<div class="container">
+				<div class="flex-container">
+					<div class="flex-item">
+						<h2>Acerca de nosotros</h2>
+						<p>ECOGYE es un proyecto sin fines de lucro encargado de promover el cuidado del medio ambiente mediante la sustitución de hábitos nocivos para nuestro ecosistema que empeoran los daños colaterales con los que lidiamos debido al calentamiento global.</p>
+					</div>
+					<div class="flex-item">
+						<div class="mslide" style="width: 100%;">
+							<div class="slideshow">
+								<ul class="m_slider">
+									<!-- 1000px*603px image size -->
+									<li>
+										<img src="assets/img/main_slider/gye.jpg" width="100%" alt="Catedral (Centro de Guayaquil)">
+									</li>
 
-				<span class="author"> ––Gary Sherman Snyder</span>
-			</blockquote>
-		</div>
-	</div>
-<!-- Como trabaja ECOGYE -->
-	<div id="presentation">
-		<div class="container">
-			<div class="flex-container">
-				<div class="flex-item">
-					<h2>Acerca de nosotros</h2>
-					<p>ECOGYE es un proyecto sin fines de lucro encargado de promover el cuidado del medio ambiente mediante la sustitución de hábitos nocivos para nuestro ecosistema que empeoran los daños colaterales con los que lidiamos debido al calentamiento global.</p>
-				</div>
-				<div class="flex-item">
-					<div class="mslide" style="width: 100%;">
-						<div class="slideshow">
-							<ul class="m_slider">
-								<!-- 1000px*603px image size -->
-								<li>
-									<img src="assets/img/main_slider/gye.jpg" width="100%" alt="Catedral (Centro de Guayaquil)">
-								</li>
+									<li>
+										<img src="assets/img/main_slider/gye1.jpg" width="100%" alt="Puente Universidad estatal - UCSG">
+									</li>
 
-								<li>
-									<img src="assets/img/main_slider/gye1.jpg" width="100%" alt="Puente Universidad estatal - UCSG">
-								</li>
+									<li>
+										<img src="assets/img/main_slider/gye2.jpg" width="100%" alt="Malecón 2000">
+									</li>
+								</ul>
+								<ol class="mpagination">
 
-								<li>
-									<img src="assets/img/main_slider/gye2.jpg" width="100%" alt="Malecón 2000">
-								</li>
-							</ul>
-							<ol class="mpagination">
-
-							</ol>
+								</ol>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- Conozca ECOGYE y sus beneficios -->
-	<div id="know">
+	<!-- Conozca ECOGYE y sus beneficios -->
+		<div id="know">
+			<div class="container">
+				<h2>ECO<strong>GYE</strong></h2>
+				<div class="flex-container">
+					<div class="flex-item info">
+						<i data-feather="alert-circle"></i>
+						<h5>Misión</h5>
+						<p>Ser líderes en compartir información y alternativas ecológicas a través de medios</br>
+						  de comunicación masiva que intesifiquen la voluntad de alcanzar un estilo de vida</br>
+						  para cuidar nuestro futuro.</p>
+					</div>
+
+					<div class="flex-item info">
+						<i data-feather="eye"></i>
+						<h5>Visión</h5>
+						<p>Crear un Guayaquil que sea modelo de sensibilidad y cuidado ambiental que lucha</br>
+						  contra el calentamiento global..</p>
+					</div>
+
+					<div class="flex-item info">
+						<i><img src="assets/img/monitoblanco.png" alt="" height="60px" style="display: block; margin: auto;"></i>
+						<h5>Boro Boro</h5>
+						<p>Aprende a cuidar el medio ambiente con nuestra divertida mascota.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Obtenga diferentes resultados -->
+		<div id="objetives">
+			<div class="container">
+				<h2>NUESTROS OBJETIVOS</h2>
+				<div class="flex-container">
+					<div class="flex-item">
+						<img src="assets/img/min_circular_info/img1.png" width="100%" alt="">
+						<h5>Concientizar a la ciudadanía sobre la importancia de cuidar el medio ambiente.</h5>
+					</div>
+
+					<div class="flex-item">
+						<img src="assets/img/min_circular_info/img2.png" width="100%" alt="">
+						<h5>Educar e insentivar el manejo de desechos orgánicos para transformarlo en compostaje.</h5>
+					</div>
+
+					<div class="flex-item">
+						<img src="assets/img/min_circular_info/img3.png" width="100%" alt="">
+						<h5>Reforestación y creación de nuevas zonas verdes dentro de la ciudad.</h5>
+					</div>
+
+					<div class="flex-item">
+						<img src="assets/img/min_circular_info/img4.png" width="100%" alt="">
+						<h5>Promoción de artículos amigables con el medio ambiente.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Comparador -->
 		<div class="container">
-			<h2>ECO<strong>GYE</strong></h2>
-			<div class="flex-container">
-				<div class="flex-item info">
-					<i data-feather="alert-circle"></i>
-					<h5>Misión</h5>
-					<p>Ser líderes en compartir información y alternativas ecológicas a través de medios</br>
-					  de comunicación masiva que intesifiquen la voluntad de alcanzar un estilo de vida</br>
-					  para cuidar nuestro futuro.</p>
+			<h2>Cambios en la temperatura de la superficie marítima.</h2>
+			<div class="varColor">
+				<div class="bar"></div>
+				<span class="lowTemp">-2°</span> <span class="highTemp">35°</span>
+			</div>
+			<div id="d-dics" style="width: 100% 0;">
+				<div class="b-dics">
+					<img src="assets/img/datas/SeaSurfaceTemperature/JanuaryData.jpeg" alt="Enero 2019">
+					<img src="assets/img/datas/SeaSurfaceTemperature/JuneData.jpeg" alt="Junio 2019">
+					<img src="assets/img/datas/SeaSurfaceTemperature/SeptemberData.jpeg" alt="Septiembre 2019">
 				</div>
+				<br>
+				<div class="hl">Cambios en la temperatura de la superficie marítima</i></div>
+			</div>
 
-				<div class="flex-item info">
-					<i data-feather="eye"></i>
-					<h5>Visión</h5>
-					<p>Crear un Guayaquil que sea modelo de sensibilidad y cuidado ambiental que lucha</br>
-					  contra el calentamiento global..</p>
+			<div id="m-dics" style="width: 100% 0;">
+				<div class="b-dics">
+					<img src="assets/img/datas/SeaSurfaceTemperature/min_JanuaryData.jpg" alt="Enero 2019">
+					<img src="assets/img/datas/SeaSurfaceTemperature/min_JuneData.jpg" alt="Junio 2019">
+					<img src="assets/img/datas/SeaSurfaceTemperature/min_SeptemberData.jpg" alt="Septiembre 2019">
 				</div>
-
-				<div class="flex-item info">
-					<i><img src="assets/img/monitoblanco.png" alt="" height="60px" style="display: block; margin: auto;"></i>
-					<h5>Boro Boro</h5>
-					<p>Aprende a cuidar el medio ambiente con nuestra divertida mascota.</p>
-				</div>
+				<br>
+				<div class="hl">Cambios en la temperatura de la superficie marítima</i></div>
 			</div>
 		</div>
+
+
+		<div id="section5">
+			<div class="container">
+				<h2 style="color: white;">Suscribete para recibir noticias y promociones</h2>
+				<input type="email" placeholder="tu.correo@ejemplo.com">
+				<br>
+				<input type="submit" class="btn btn-large btn-primary btn-send" value="Suscribirse">
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="container-copy">
+					<p class="hl">ECOGYE nos preocupamos por usted y el medio ambiente.</p>
+				</div>
+
+				<div class="container-social">
+					<nav class="nav-social">
+						<ul>
+							<li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
+							<li><a href="https://www.facebook.com/ECOGye-108276580595340/" target="_blank"><i data-feather="facebook"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCqc0dVLoK975Gp4N2V-Uhwg?fbclid=IwAR2UITlh7f6DoEDMT_hyIxNiHusygDbeWeIC5nl_sgboC0F01XAK1knY0ZQ"target="_blank"><i data-feather="youtube"></i></a></li>
+							<li><a href="https://www.instagram.com/eco_gye/?hl=es-la"target="_blank"><i data-feather="instagram"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
 	</div>
-<!-- Obtenga diferentes resultados -->
-	<div id="objetives">
-		<div class="container">
-			<h2>NUESTROS OBJETIVOS</h2>
-			<div class="flex-container">
-				<div class="flex-item">
-					<img src="assets/img/min_circular_info/img1.png" width="100%" alt="">
-					<h5>Concientizar a la ciudadanía sobre la importancia de cuidar el medio ambiente.</h5>
-				</div>
-
-				<div class="flex-item">
-					<img src="assets/img/min_circular_info/img2.png" width="100%" alt="">
-					<h5>Educar e insentivar el manejo de desechos orgánicos para transformarlo en compostaje.</h5>
-				</div>
-
-				<div class="flex-item">
-					<img src="assets/img/min_circular_info/img3.png" width="100%" alt="">
-					<h5>Reforestación y creación de nuevas zonas verdes dentro de la ciudad.</h5>
-				</div>
-
-				<div class="flex-item">
-					<img src="assets/img/min_circular_info/img4.png" width="100%" alt="">
-					<h5>Promoción de artículos amigables con el medio ambiente.</h5>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Comparador -->
-	<div class="container">
-		<h1>Cambios en la temperatura de la superficie marítima.</h1>
-		<div class="varColor">
-			<div class="bar"></div>
-			<span class="lowTemp">-2°</span> <span class="highTemp">35°</span>
-		</div>
-		<div id="d-dics" style="width: 100% 0;">
-			<div class="b-dics">
-				<img src="assets/img/datas/SeaSurfaceTemperature/JanuaryData.jpeg" alt="Enero 2019">
-				<img src="assets/img/datas/SeaSurfaceTemperature/JuneData.jpeg" alt="Junio 2019">
-				<img src="assets/img/datas/SeaSurfaceTemperature/SeptemberData.jpeg" alt="Septiembre 2019">
-			</div>
-			<br>
-			<div class="hl">Cambios en la temperatura de la superficie marítima</i></div>
-		</div>
-
-		<div id="m-dics" style="width: 100% 0;">
-			<div class="b-dics">
-				<img src="assets/img/datas/SeaSurfaceTemperature/min_JanuaryData.jpg" alt="Enero 2019">
-				<img src="assets/img/datas/SeaSurfaceTemperature/min_JuneData.jpg" alt="Junio 2019">
-				<img src="assets/img/datas/SeaSurfaceTemperature/min_SeptemberData.jpg" alt="Septiembre 2019">
-			</div>
-			<br>
-			<div class="hl">Cambios en la temperatura de la superficie marítima</i></div>
-		</div>
-	</div>
-
-
-	<div id="section5">
-		<div class="container">
-			<h1>Suscribete para recibir noticias y promociones</h1>
-			<input type="email" placeholder="tu.correo@ejemplo.com">
-			<br>
-			<input type="submit" class="btn btn-large btn-primary btn-send" value="Suscribirse">
-		</div>
-	</div>
-	<footer>
-		<div class="container">
-			<div class="container-copy">
-				<p class="hl">ECOGYE nos preocupamos por usted y el medio ambiente.</p>
-			</div>
-
-			<div class="container-social">
-				<nav class="nav-social">
-					<ul>
-						<li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
-						<li><a href="https://www.facebook.com/ECOGye-108276580595340/" target="_blank"><i data-feather="facebook"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCqc0dVLoK975Gp4N2V-Uhwg?fbclid=IwAR2UITlh7f6DoEDMT_hyIxNiHusygDbeWeIC5nl_sgboC0F01XAK1knY0ZQ"target="_blank"><i data-feather="youtube"></i></a></li>
-						<li><a href="https://www.instagram.com/eco_gye/?hl=es-la"target="_blank"><i data-feather="instagram"></i></a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</footer>
 	<script>
 		feather.replace();
+
+		function openNav() {
+			document.getElementById("Sidenav").style.width = "200px";
+			document.getElementById("main").style.marginLeft = "200px";
+			document.getElementById("main").style.padding = "16px";
+			document.getElementById("main").style.background = "#41866B";
+			document.getElementById("main").style.overflow = "hidden";
+		}
+
+		function closeNav() {
+			document.getElementById("Sidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.getElementById("main").style.padding = "0";
+			document.getElementById("main").style.overflow = "visible";
+		}
 	</script>
 </body>
 </html>
