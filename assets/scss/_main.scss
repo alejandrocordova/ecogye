@@ -147,11 +147,12 @@ blockquote {
         display: inline-block;
         list-style: none;
         ul {
-            list-style: none;
+            @include clear-list;
             float: right;
         }
 
-        li { float: left; list-style: none;}
+        li { float: left; @include clear-list;}
+
         a {
             display: block;
             padding: $a;
@@ -169,6 +170,9 @@ blockquote {
         list-style: none;
         float: right;
         overflow: hidden;
+        ul {
+            @include clear-list;
+        }
         li { float: left; }
         a {
             display: block;
