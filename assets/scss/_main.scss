@@ -167,7 +167,7 @@ blockquote {
         }
     }
     .list {
-        list-style: none;
+        list-style: none !important;
         float: right;
         overflow: hidden;
         ul {
