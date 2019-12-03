@@ -17,12 +17,16 @@
 }
 
 html,
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html,
 body,
 #fullscreen,
 .showcase {
     height: 100%;
     display: block;
-    font-family: UI Normal;
     font-weight: normal;
 }
 
@@ -56,12 +60,20 @@ ul { @include clear-list; }
 
     p {
         color: white !important;
-        font-size: 30px;
+        font: {
+            size: 30px;
+            weight: 500;
+        }
         width: 80%;
         margin: auto;
         text-shadow: $text-shadow;
     }
-    h1 { color: white !important; text-shadow: $text-shadow; }
+    
+    h1 { 
+        color: white !important; 
+        text-shadow: $text-shadow;
+        font-weight: 700;
+    }
 
     .blockquote {
         background: rgba(white, .8);
@@ -97,7 +109,10 @@ ul { @include clear-list; }
 }
 
 blockquote {
-    font-family: UI LightItalic;
+    font: {
+        weight: 100;
+        style: italic;
+    }
     display: block;
     margin: auto;
     position: relative;
@@ -205,8 +220,10 @@ blockquote {
     a {
         padding: 8px 8px 8px 32px;
         margin-top: 10px;
-        font-size: 18px;
-        font-family: UI Light;
+        font: {
+            size: 18px;
+            weight: 100;
+        }
         color: white;
         display: block;
         transition: 0.3s;
@@ -230,7 +247,6 @@ blockquote {
 }
 
 h1, h2, h3, h4 h5, h6 {
-    font-family: UI Semibold;
     letter-spacing: .25px;
     color: map-get($accentcolor, 'black');
     padding-bottom: 15px;
@@ -254,7 +270,6 @@ a {
 }
 
 .brand-text {
-    font-family: UI Light !important;
     text-transform: uppercase;
     padding: 0 !important;
     font-size: 55px;
@@ -294,7 +309,6 @@ a {
             text-align: center;
             color: white;
             font-size: 20px;
-            font-family: UI Semibold;
         }
 
         p {
@@ -317,7 +331,6 @@ a {
     h2 { padding-bottom: map-get($padding, 'nv4'); }
     h5 {
         padding-top: map-get($padding, 'nv2');
-        font-family: UI Light;
         text-align: center;
     }
 
@@ -381,7 +394,7 @@ a {
 }
 
 .highTemp, .lowTemp {
-    font-family: UI Bold;
+    
 }
 $LowTemperature: #101557;
 $HighTemperature: #F4EBC8;
@@ -441,7 +454,6 @@ input[type=email]{
 button, .btn, input[type=submit] {
     border: none;
     padding: 7pt 15pt;
-    font-family: UI Semibold;
     letter-spacing: 1.25px;
     font-size: 14px;
     background: none;
@@ -459,18 +471,17 @@ button, .btn, input[type=submit] {
 }
 
 .btn-shop {
-    background: $dark !important;
-    margin-top: 20px;
+    background: $primary;
+    margin-top: 10px;
     color: white;
-    transition: $transition;
+    transition: .3s;
 
     &:hover {
-        background: darken($dark, 5) !important;
-        transition: $transition;
+        background-color: darken($primary, 5%);
     }
 
     &:active {
-        background: darken($dark, 15) !important;
+        background-color: darken($primary, 15%);
     }
 }
 
@@ -496,7 +507,6 @@ footer {
 
     .hl {
         text-transform: uppercase;
-        font-family: UI Normal;
         color: white;
         font-size: 11px;
         letter-spacing: 3px;
