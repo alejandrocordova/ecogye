@@ -75,21 +75,25 @@
 		<li><a href="shop.html"><i data-feather="shopping-cart" style="height: 18px;"></i> Tienda</a></li>
 		<li><a href="https://github.com/alejandrocordova/ecogye"><i data-feather="github" style="height: 18px;"></i> Proyecto</a></li>
 	</div>
-	<div id="main">
+	<div id="fullscreen">
 		<header class="showcase">
 			<nav class="navbar">
 				<ul class="logo">
 					<li><a href="index.html">ECOGYE</a></li>
 				</ul>
-				<ul class="list">
-					<li>
-						<a><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+				<ul class="list" style="list-style: none;">
+					<li style="list-style: none;">
+						<a><span id="menuicon" onclick="openNav()">&#9776;</span></a>
 					</li>
+					<li><a class="menuitem" href="index.html">Inicio</a></li>
+					<li><a class="menuitem" href="activities.html">Actividades</a></li>
+					<li><a class="menuitem" href="shop.html">Tienda</a></li>
+					<li><a class="menuitem" href="https://github.com/alejandrocordova/ecogye">Proyecto</a></li>
 				</ul>
 			</nav>
 
 			<div class="showcase-inner">
-				<img width="130px" src="assets/img/brand_logo.svg" alt="">
+				<img width="130px" src="assets/img/brand_logo.svg" alt="" class="slideUp">
 				<h1 class="brand-text">ECOGYE</h1>
 				<p>Recuperar Guayaquil está al alcance de todos.</p>
 			</div>
@@ -105,6 +109,7 @@
 				</div>
 			</div>
 		</header>
+	</div>
 		<div class="body-blockquote">
 			<div class="container">
 				<blockquote>
@@ -181,9 +186,9 @@
 		<div id="objetives">
 			<div class="container">
 				<h2>NUESTROS OBJETIVOS</h2>
-				<div class="flex-container">
+				<div class="flex-container" id="animated">
 					<div class="flex-item">
-						<img src="assets/img/min_circular_info/img1.png" width="100%" alt="">
+						<img src="assets/img/min_circular_info/img1.png" width="100%" alt="" class="showScroll">
 						<h5>Concientizar a la ciudadanía sobre la importancia de cuidar el medio ambiente.</h5>
 					</div>
 
@@ -270,6 +275,9 @@
 			document.getElementById("main").style.padding = "16px";
 			document.getElementById("main").style.background = "#41866B";
 			document.getElementById("main").style.overflow = "hidden";
+			document.body.style.backgroundColor = "rgba(0,0,0,.4)";
+			document.body.style.listStyle = none;
+			document.getElementById("menuicon").style.display = "none";
 		}
 
 		function closeNav() {
@@ -277,7 +285,20 @@
 			document.getElementById("main").style.marginLeft = "0";
 			document.getElementById("main").style.padding = "0";
 			document.getElementById("main").style.overflow = "visible";
+			document.body.style.backgroundColor = "white";
+			document.getElementById("menuicon").style.display = "block";
 		}
+
+		$(window).scroll(function() {
+			$('#animated').each(function() {
+				var imagePos = $(this).offset().top;
+				var topOfWindow = $(window).scrollTop();
+
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideLeft");
+				}
+			})
+		})
 	</script>
 </body>
 </html>

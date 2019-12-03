@@ -1,0 +1,47 @@
+// Variables
+$primary:       #41866B;
+$black:         #101010;
+$dark:          #363636;
+$light:         #575757;
+$link:          #5D58FC;
+$footercolor:   #17393A;
+
+$accentcolor: (
+    "primary":      $primary,
+    "black":        $black,
+    "light":        $light,
+    "link":         $link,
+    "footercolor":  $footercolor
+);
+
+$navy: #092C4C;
+$blue: #1D85E8;
+$green: #2CC8A8;
+$yellow: #FFC258;
+$pink: #FE8084;
+
+// Grayscale
+$gray: (
+    "90%": #526476,
+    "70%": #7E92A3,
+    "50%": #D7E0E7,
+    "30%": #EAEEF3,
+    "10%": #F6FAFD
+);
+
+// Paddings
+$padding: (
+    "nv1": 8pt,
+    "nv2": 8pt*2,
+    "nv3": 8pt*3,
+    "nv4": 8pt*4,
+    "nv5": 8pt*5,
+    "nv6": 8pt*8
+);
+
+// Others
+$text-shadow: 1px 1px 2px rgba(black, .5) !default;
+$fontawesomesrceot: url("../fonts/fontawesome/webfonts/fa-solid-900.eot") !default;
+$fontawesomesrcformat: url("../fonts/fontawesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/webfonts/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/webfonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fontawesome/webfonts/fa-solid-900.svg#fontawesome") format("svg") !default;
+$transition: .3s all ease !default;
+$breakpoints: ("small": 320px, "medium": 768px, "large": 1024px) !default;

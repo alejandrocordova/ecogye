@@ -1,7 +1,7 @@
 $(document).ready(function(){
  	var imgItems = $('.slider li').length;
 	var imgPosition = 1;
-	console.log(imgItems);
+	// console.log(imgItems);
 
 	for(i = 1; i <= imgItems; i++) {
 		$('.pagination').append('<li><span class="fa fa-circle"></span></li>');		
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 	function pagination() {
 		var $paginationPosition = $(this).index() + 1;
-		console.log($paginationPosition);
+		// console.log($paginationPosition);
 
 		$('.slider li').hide();
 		$('.slider li:nth-child('+ $paginationPosition +')').fadeIn();
@@ -34,7 +34,7 @@ $(document).ready(function(){
 		} else {
 			imgPosition++;
 		}
-		console.log(imgPosition);
+		// console.log(imgPosition);
 
 		$('.pagination li').css({'color': '#bcbcbc'});
 		$('.pagination li:nth-child('+ imgPosition +')').css({'color': '#66BC5A'});
@@ -49,7 +49,7 @@ $(document).ready(function(){
 		} else {
 			imgPosition--;
 		}
-		console.log(imgPosition);
+		// console.log(imgPosition);
 
 		$('.pagination li').css({'color': '#bcbcbc'});
 		$('.pagination li:nth-child('+ imgPosition +')').css({'color': '#bcbcbc'});
@@ -63,7 +63,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	var cimgItems = $('.m_slider li').length;
 	var cimgPosition = 1;
-	console.log(cimgItems);
+	// console.log(cimgItems);
 
 	for(i = 1; i <= cimgItems; i++) {	
 		$('.mpagination').append('<li><span class="fa fa-circle"></span></li>');
@@ -84,7 +84,7 @@ $(document).ready(function(){
 
 	function cpagination() {
 		var $cpaginationPosition = $(this).index() + 1;
-		console.log($cpaginationPosition);
+		// console.log($cpaginationPosition);
 
 		$('.m_slider li').hide();
 		$('.m_slider li:nth-child('+ $cpaginationPosition +')').fadeIn();
@@ -101,7 +101,7 @@ $(document).ready(function(){
 		} else {
 			cimgPosition++;
 		}
-		console.log(cimgPosition);
+		// console.log(cimgPosition);
 
 		$('.mpagination li').css({'color': '#bcbcbc'});
 		$('.mpagination li:nth-child('+ cimgPosition +')').css({'color': '#66BC5A'});
@@ -116,7 +116,7 @@ $(document).ready(function(){
 		} else {
 			cimgPosition--;
 		}
-		console.log(cimgPosition);
+		// console.log(cimgPosition);
 
 		$('.mpagination li').css({'color': '#bcbcbc'});
 		$('.mpagination li:nth-child('+ cimgPosition +')').css({'color': '#66BC5A'});

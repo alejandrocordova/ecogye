@@ -10,11 +10,8 @@
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
 	<link rel="stylesheet" href="assets/fonts/uifont.css">
-	<link rel="stylesheet" href="assets/css/dics.css">
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/feather.js"></script>
-	<script src="assets/js/slider.js"></script>
-	<script src="assets/js/dics.js"></script>
 
 </head>
 <body>
@@ -26,49 +23,35 @@
 		<li><a href="https://github.com/alejandrocordova/ecogye"><i data-feather="github" style="height: 18px;"></i> Proyecto</a></li>
 	</div>
 	<div id="main">
-		<header class="showcase">
+		<header class="showcase-hero">
 			<nav class="navbar">
-				<ul class="logo">
-					<li><a href="index.html">ECOGYE</a></li>
+				<ul class="logo slideRight">
+					<li class="fadeIn"><a href="index.html">ECOGYE <img src="assets/img/planos/blanco.svg" alt="logo"></a></li>
 				</ul>
-
-				<ul class="list">
-					<ul class="list">
-						<li>
-							<a><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
-						</li>
-					</ul>
+				<ul class="list slideLeft">
+					<li>
+						<a><span id="menuicon" onclick="openNav()">&#9776;</span></a>
+					</li>
+					<li><a class="menuitem" href="index.html">Inicio</a></li>
+					<li><a class="menuitem" href="activities.html">Actividades</a></li>
+					<li><a class="menuitem" href="shop.html">Tienda</a></li>
+					<li><a class="menuitem" href="https://github.com/alejandrocordova/ecogye">Proyecto</a></li>
 				</ul>
 			</nav>
 
-			<div class="showcase-inner">
-				<img width="130px" src="assets/img/brand_logo.svg" alt="">
-				<h1 class="brand-text">ECOGYE</h1>
-				<p>Recuperar Guayaquil está al alcance de todos.</p>
-			</div>
-			<br>
+			
 			<div class="blockquote">
 				<div class="container">
-					<blockquote>
-						Verde es el color principal del mundo, y a partir del cual surge su hermosura.
+					<blockquote class="fadeIn">
+						Verde es el color principal del mundo, y a partir del cual surge su hermosura
 						<br>
 
-						<span class="author"> ––Pedro Calderón de la Barca</span>
+						<span class="author"> ––Pedro Calderón de la Baca</span>
 					</blockquote>
 				</div>
 			</div>
 		</header>
-		<div class="body-blockquote">
-			<div class="container">
-				<blockquote>
-					 Verde es el color principal del mundo, y a partir del cual surge su hermosura.
-					<br>
-
-					<span class="author"> ––Pedro Calderón de la Barca</span>
-				</blockquote>
-			</div>
-		</div>
-
+	</div>
 		<div id="section1">
 			<div class="container">
 				<div class="flex-container">
@@ -133,6 +116,7 @@
 			document.getElementById("main").style.padding = "16px";
 			document.getElementById("main").style.background = "#41866B";
 			document.getElementById("main").style.overflow = "hidden";
+			document.getElementById("menuicon").style.display = "none";
 		}
 
 		function closeNav() {
@@ -140,6 +124,7 @@
 			document.getElementById("main").style.marginLeft = "0";
 			document.getElementById("main").style.padding = "0";
 			document.getElementById("main").style.overflow = "visible";
+			document.getElementById("menuicon").style.display = "block";
 		}
 	</script>
 </body>
