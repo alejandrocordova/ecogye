@@ -198,6 +198,10 @@ blockquote {
     overflow-x: hidden;
     transition: .5s;
     padding-top: 60px;
+
+    ul {
+        @include clear-list;
+    }
     a {
         padding: 8px 8px 8px 32px;
         margin-top: 10px;
