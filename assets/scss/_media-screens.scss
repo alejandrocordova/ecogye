@@ -75,4 +75,23 @@
             font-size: 40px;
         }
     }
+
+    .container-copy, .container-social {
+        float: none !important;
+        margin: auto;
+        text-align: center;
+    }
+
+    .nav-social {
+        display: inline-block;
+        margin-top: 20px;
+
+        a {
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: map -get($breakpoints, 'small')) {
+    
 }
