@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="apple-touch-icon" href="assets/img/planos/fav.svg">
+	<link rel="shortcut icon" href="assets/img/planos/fav.svg">
+	<title>ECOGYE</title>
+	<link rel="stylesheet" href="assets/css/master.css"> 
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/slick/slick.css">
+	<link rel="stylesheet" href="assets/slick/slick-theme.css">
+	<link rel="stylesheet" href="assets/fonts/helveticaNowText/stylesheet.css">
+	<script src="assets/js/feather.js"></script>
+	<script src="assets/js/dics.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', domReady);
+
+		function domReady() {
+			new Dics ({
+				container: document.querySelectorAll('.b-dics') [0],
+				linesOrientation: 'horizontal',
+				textPosition: 'top'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[1],
+				linesOrientation: 'vertical',
+				hideText: true,
+				textPosition: 'center'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[2]
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[3],
+				linesOrientation: 'vertical',
+				textPosition: 'left',
+				arrayBackgroundColorText: ['#000000', '#FFFFFF'],
+				arrayColorText: ['#FFFFFF', '#000000'],
+				linesColor: 'rgb(0,0,0)'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[4],
+				linesOrientation: 'vertical',
+				textPosition: 'right'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[5],
+				textPosition: 'bottom'
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[6],
+				filters: ['blur(3px)', 'grayscale(1)', 'sepia(1)', 'saturate(3)']
+			});
+
+			new Dics ({
+				container: document.querySelectorAll('.b-dics')[7],
+				rotate: '45deg'
+			})
+		}
+	</script>
+</head>
+<body>
+	<div id="Sidenav" class="sidenav">
+	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul>
+		<li><a href="index.html"><i data-feather="home" style="height: 18px;"></i> Inicio</a></li>
+		<li><a href="activities.html"><i data-feather="activity" style="height: 18px;"></i> Actividades</a></li>
+		<li><a href="shop.html"><i data-feather="shopping-cart" style="height: 18px;"></i> Tienda</a></li>
+		<li><a href="https://github.com/alejandrocordova/ecogye"><i data-feather="github" style="height: 18px;"></i> Proyecto</a></li>
+		</ul>
+	</div>
+	<div id="fullscreen">
+		<header class="showcase" id="main">
+			<nav class="navbar">
+				<ul class="logo">
+					<li><a href="index.html">ECOGYE</a></li>
+				</ul>
+				<ul class="list" style="list-style: none;">
+					<li style="list-style: none;">
+						<a><span id="menuicon" onclick="openNav()">&#9776;</span></a>
+					</li>
+					<li><a class="menuitem" href="index.html">Inicio</a></li>
+					<li><a class="menuitem" href="activities.html">Actividades</a></li>
+					<li><a class="menuitem" href="shop.html">Tienda</a></li>
+					<li><a class="menuitem" href="https://github.com/alejandrocordova/ecogye">Proyecto</a></li>
+				</ul>
+			</nav>
+
+			<div class="showcase-inner">
+				<img width="130px" src="assets/img/brand_logo.svg" alt="" class="slideUp">
+				<h1 class="brand-text">ECOGYE</h1>
+				<p>Recuperar Guayaquil está al alcance de todos.</p>
+			</div>
+			<br>
+			<div class="blockquote">
+				<div class="container">
+					<blockquote>
+						La naturaleza no es un lugar para visitar. Es el hogar.
+						<br>
+
+						<span class="author"> ––Gary Sherman Snyder</span>
+					</blockquote>
+				</div>
+			</div>
+		</header>
+	</div>
+		<div class="body-blockquote">
+			<div class="container">
+				<blockquote>
+					La naturaleza no es un lugar para visitar. Es el hogar.
+					<br>
+
+					<span class="author"> ––Gary Sherman Snyder</span>
+				</blockquote>
+			</div>
+		</div>
+	<!-- Como trabaja ECOGYE -->
+		<div id="presentation">
+			<div class="container">
+				<div class="flex-container">
+					<div class="flex-item">
+						<h2>Acerca de nosotros</h2>
+						<p>ECOGYE es un proyecto sin fines de lucro encargado de promover el cuidado del medio ambiente mediante la sustitución de hábitos nocivos para nuestro ecosistema que empeoran los daños colaterales con los que lidiamos debido al calentamiento global.</p>
+					</div>
+					<div class="flex-item">
+						<div class="mslide">
+							<div class="carrousel">
+								<img src="assets/img/main_slider/gye.jpg" width="100%" alt="Catedral (Centro de Guayaquil)">
+								<img src="assets/img/main_slider/gye1.jpg" width="100%" alt="Puente Universidad estatal - UCSG">
+								<img src="assets/img/main_slider/gye2.jpg" width="100%" alt="Malecón 2000">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Conozca ECOGYE y sus beneficios -->
+		<div id="know">
+			<div class="container">
+				<h2>ECO<strong>GYE</strong></h2>
+				<div class="flex-container">
+					<div class="flex-item info">
+						<i data-feather="alert-circle"></i>
+						<h5>Misión</h5>
+						<p>Ser líderes en compartir información y alternativas ecológicas a través de medios</br>
+						  de comunicación masiva que intesifiquen la voluntad de alcanzar un estilo de vida</br>
+						  para cuidar nuestro futuro.</p>
+					</div>
+
+					<div class="flex-item info">
+						<i data-feather="eye"></i>
+						<h5>Visión</h5>
+						<p>Crear un Guayaquil que sea modelo de sensibilidad y cuidado ambiental que lucha</br>
+						  contra el calentamiento global..</p>
+					</div>
+
+					<div class="flex-item info">
+						<i><img src="assets/img/monitoblanco.png" alt="" height="60px" style="display: block; margin: auto;"></i>
+						<h5>Boro Boro</h5>
+						<p>Aprende a cuidar el medio ambiente con nuestra divertida mascota.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Obtenga diferentes resultados -->
+		<div id="objetives">
+			<div class="container">
+				<h2>NUESTROS OBJETIVOS</h2>
+				<div class="flex-container" id="animated">
+					<div class="flex-item">
+						<img src="assets/img/min_circular_info/img1.png" width="100%" alt="" class="showScroll">
+						<h5>Concientizar a la ciudadanía sobre la importancia de cuidar el medio ambiente.</h5>
+					</div>
+
+					<div class="flex-item">
+						<img src="assets/img/min_circular_info/img2.png" width="100%" alt="">
+						<h5>Educar e insentivar el manejo de desechos orgánicos para transformarlo en compostaje.</h5>
+					</div>
+
+					<div class="flex-item">
+						<img src="assets/img/min_circular_info/img3.png" width="100%" alt="">
+						<h5>Reforestación y creación de nuevas zonas verdes dentro de la ciudad.</h5>
+					</div>
+
+					<div class="flex-item">
+						<img src="assets/img/min_circular_info/img4.png" width="100%" alt="">
+						<h5>Promoción de artículos amigables con el medio ambiente.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Comparador -->
+		<div class="container">
+			<h2>Cambios en la temperatura de la superficie marítima.</h2>
+			<div class="varColor">
+				<div class="bar"></div>
+				<span class="lowTemp">-2°</span> <span class="highTemp">35°</span>
+			</div>
+			<div id="d-dics" style="width: 100% 0;">
+				<div class="b-dics">
+					<img src="assets/img/datas/SeaSurfaceTemperature/JanuaryData.jpeg" alt="Enero 2019">
+					<img src="assets/img/datas/SeaSurfaceTemperature/JuneData.jpeg" alt="Junio 2019">
+					<img src="assets/img/datas/SeaSurfaceTemperature/SeptemberData.jpeg" alt="Septiembre 2019">
+				</div>
+				<br>
+				<div class="hl">Cambios en la temperatura de la superficie marítima</i></div>
+			</div>
+
+			<div id="m-dics" style="width: 100% 0;">
+				<div class="b-dics">
+					<img src="assets/img/datas/SeaSurfaceTemperature/min_JanuaryData.jpg" alt="Enero 2019">
+					<img src="assets/img/datas/SeaSurfaceTemperature/min_JuneData.jpg" alt="Junio 2019">
+					<img src="assets/img/datas/SeaSurfaceTemperature/min_SeptemberData.jpg" alt="Septiembre 2019">
+				</div>
+				<br>
+				<div class="hl">Cambios en la temperatura de la superficie marítima</i></div>
+			</div>
+		</div>
+
+
+		<div id="section5">
+			<div class="container">
+				<h2 style="color: white;">Suscríbete para recibir noticias y promociones</h2>
+				<input type="email" placeholder="tu.correo@ejemplo.com">
+				<br>
+				<input type="submit" class="btn btn-large btn-primary btn-send" value="Suscribirse">
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="container-copy">
+					<p class="hl">ECOGYE nos preocupamos por usted y el medio ambiente.</p>
+				</div>
+
+				<div class="container-social">
+					<nav class="nav-social">
+						<ul>
+							<li><a href="#main"><i data-feather="chevrons-up"></i></a></li>
+							<li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
+							<li><a href="https://www.facebook.com/ECOGye-108276580595340/" target="_blank"><i data-feather="facebook"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCqc0dVLoK975Gp4N2V-Uhwg?fbclid=IwAR2UITlh7f6DoEDMT_hyIxNiHusygDbeWeIC5nl_sgboC0F01XAK1knY0ZQ"target="_blank"><i data-feather="youtube"></i></a></li>
+							<li><a href="https://www.instagram.com/eco_gye/?hl=es-la"target="_blank"><i data-feather="instagram"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/slick/slick.js"></script>
+	<script>
+		feather.replace();
+		
+		$(document).ready(function() {
+			$('.carrousel').slick({
+				dots: true,
+				adaptiveHeight: true,
+				autoplay: true,
+				arrows: true
+			});
+		});
+
+		function openNav() {
+			document.getElementById("Sidenav").style.width = "200px";
+			document.getElementById("main").style.marginLeft = "200px";
+			document.getElementById("main").style.padding = "16px";
+			document.getElementById("main").style.background = "#41866B";
+			document.getElementById("main").style.overflow = "hidden";
+			document.body.style.backgroundColor = "rgba(0,0,0,.4)";
+			document.body.style.listStyle = none;
+			document.getElementById("menuicon").style.display = "none";
+		}
+
+		function closeNav() {
+			document.getElementById("Sidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.getElementById("main").style.padding = "0";
+			document.getElementById("main").style.overflow = "visible";
+			document.body.style.backgroundColor = "white";
+			document.getElementById("menuicon").style.display = "block";
+		}
+
+		$(window).scroll(function() {
+			$('#animated').each(function() {
+				var imagePos = $(this).offset().top;
+				var topOfWindow = $(window).scrollTop();
+
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideLeft");
+				}
+			})
+		})
+	</script>
+</body>
+</html>

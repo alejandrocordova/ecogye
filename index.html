@@ -6,14 +6,13 @@
 	<link rel="apple-touch-icon" href="assets/img/planos/fav.svg">
 	<link rel="shortcut icon" href="assets/img/planos/fav.svg">
 	<title>ECOGYE</title>
-	<link rel="stylesheet" href="assets/css/master.css">
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="assets/css/master.css"> 
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
-	<link rel="stylesheet" href="assets/fonts/uifont.css">
-	<script src="assets/js/jquery.js"></script>
+	<link rel="stylesheet" href="assets/slick/slick.css">
+	<link rel="stylesheet" href="assets/slick/slick-theme.css">
+	<link rel="stylesheet" href="assets/fonts/helveticaNowText/stylesheet.css">
 	<script src="assets/js/feather.js"></script>
-	<script src="assets/js/slider.js"></script>
 	<script src="assets/js/dics.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', domReady);
@@ -79,7 +78,7 @@
 		</ul>
 	</div>
 	<div id="fullscreen">
-		<header class="showcase">
+		<header class="showcase" id="main">
 			<nav class="navbar">
 				<ul class="logo">
 					<li><a href="index.html">ECOGYE</a></li>
@@ -132,25 +131,11 @@
 						<p>ECOGYE es un proyecto sin fines de lucro encargado de promover el cuidado del medio ambiente mediante la sustitución de hábitos nocivos para nuestro ecosistema que empeoran los daños colaterales con los que lidiamos debido al calentamiento global.</p>
 					</div>
 					<div class="flex-item">
-						<div class="mslide" style="width: 100%;">
-							<div class="slideshow">
-								<ul class="m_slider">
-									<!-- 1000px*603px image size -->
-									<li>
-										<img src="assets/img/main_slider/gye.jpg" width="100%" alt="Catedral (Centro de Guayaquil)">
-									</li>
-
-									<li>
-										<img src="assets/img/main_slider/gye1.jpg" width="100%" alt="Puente Universidad estatal - UCSG">
-									</li>
-
-									<li>
-										<img src="assets/img/main_slider/gye2.jpg" width="100%" alt="Malecón 2000">
-									</li>
-								</ul>
-								<ol class="mpagination">
-
-								</ol>
+						<div class="mslide">
+							<div class="carrousel">
+								<img src="assets/img/main_slider/gye.jpg" width="100%" alt="Catedral (Centro de Guayaquil)">
+								<img src="assets/img/main_slider/gye1.jpg" width="100%" alt="Puente Universidad estatal - UCSG">
+								<img src="assets/img/main_slider/gye2.jpg" width="100%" alt="Malecón 2000">
 							</div>
 						</div>
 					</div>
@@ -259,6 +244,7 @@
 				<div class="container-social">
 					<nav class="nav-social">
 						<ul>
+							<li><a href="#main"><i data-feather="chevrons-up"></i></a></li>
 							<li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
 							<li><a href="https://www.facebook.com/ECOGye-108276580595340/" target="_blank"><i data-feather="facebook"></i></a></li>
 							<li><a href="https://www.youtube.com/channel/UCqc0dVLoK975Gp4N2V-Uhwg?fbclid=IwAR2UITlh7f6DoEDMT_hyIxNiHusygDbeWeIC5nl_sgboC0F01XAK1knY0ZQ"target="_blank"><i data-feather="youtube"></i></a></li>
@@ -269,8 +255,20 @@
 			</div>
 		</footer>
 	</div>
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/slick/slick.js"></script>
 	<script>
 		feather.replace();
+		
+		$(document).ready(function() {
+			$('.carrousel').slick({
+				dots: true,
+				adaptiveHeight: true,
+				autoplay: true,
+				arrows: true
+			});
+		});
 
 		function openNav() {
 			document.getElementById("Sidenav").style.width = "200px";
