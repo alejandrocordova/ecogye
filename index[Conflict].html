@@ -33,6 +33,10 @@
       </div>
     </header>
     <div class="content">
+      <style>
+        .slide { display: none; }
+        
+      </style>
       <div id="sec1">
         <div class="container">
           <div class="flex-container">
@@ -48,22 +52,21 @@
           </div>
         </div>
       </div>
-      <div class="parallax-background" id="sec2">
+      <div id="sec2">
         <div class="container">
           <h2>ECOGYE</h2>
           <div class="flex-container">
             <div class="flex-item info"><i data-feather="alert-circle"></i>
               <h5>Misión</h5>
-              <p>Compartir información y alternativas ecológicas a través de los medios de comunicación masiva que insentive a las personas a tener un estlo de vida mejor.</p>
+              <p>Ser líderes en compartir información y alternativas ecológicas a través de medios <br> de comunicación masiva que intensifiquen la voluntad de alcanzar un estilo de vida <br> para cuidar nuestro futuro.</p>
             </div>
             <div class="flex-item info"><i data-feather="eye"></i>
               <h5>Visión</h5>
-              <p>Crear un Guayaquil que sea modelo de sensibilidad y cuidado ambiental, que lucha contra el calentamiento golbal... <a href='#'>Ver más</a></p>
+              <p>Crear un Guayaquil que sea modelo de sensibilidad y cuidado ambiental que lucha</br> contra el calentamiento golbal...</p>
             </div>
             <div class="flex-item info"><i><img src='images/white-monkey.png' alt='monkey' height='60px' style='display: block; margin: auto;'></i>
               <h5>Boro Boro</h5>
               <p>Aprende a cuidar el medio ambiente con nuestra divertida mascota.</p>
-              <button class="bnt btn-centered">Entrar</button>
             </div>
           </div>
         </div>
@@ -97,106 +100,107 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="foo">
       <div id="sec4">
         <div class="container">
-          <h2 class="color-white">Suscríbete para recibir noticias </br> y promociones</h2>
-          <input type="email" placeholder="jhon.doe@mail.com"><br>
-          <input class="btn btn-large btn-primary bnt-send" type="submit" value="Suscribirse">
+          <h2 style="color: white;">Suscíbete para recibir noticias y promociones.</h2>
+          <input type="email" placeholder="john.doe@ejemplo.com">
         </div>
       </div>
-      <footer>
-        <div class="container">
-          <div class="container-copyright">
-            <p class="hl">ECOGYE se preocupa por ti y por el medio ambiente.</p>
-          </div>
-          <div class="findout">
-            <div class="findout-content">
-              <ul>
-                <li><a href="#main"><i data-feather="chevrons-up"></li></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="foobar">
-            <div class="foobar-content">
-              <ul>
-                <li><a href="#main"><i data-feather="chevrons-up"></i></a></li>
-                <li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
-                <li><a href="write a link" target="_blank"><i data-feather="facebook"></i></a></li>
-                <li><a href="Write a link" target="_blank"><i data-feather="youtube"></i></a></li>
-                <li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <script src="scripts/vendors/feather.js"></script>
-          <script>
-            feather.replace();
-            
-            $(document).ready(function() {
-              $('.carousel').slick({
-                dots: true,
-                adaptiveHeight: true,
-                autoplay: true,
-                arrows: true
-              });
-            });
-            
-            //- navbar functions
-            //- Active function
-            function openNav() {
-              document.getElementById("responsive-menu").style. width="200px";
-              document.getElementById("main").style.marginLeft="200px";
-              document.getElementById("main").style.padding="16px";
-              document.getElementById("main").style.background="#41866B";
-              document.getElementById("main").style.overflow="hidden";
-              document.body.style.backgroundColor="rgba(0,0,0,.4)";
-              document.getElementById("menuicon").style.display="none";
-            }
-            
-            //- Shutdown function
-            function closenav() {
-              document.getElementById("responsive-menu").style. width="0";
-              document.getElementById("main").style.marginLeft="0";
-              document.getElementById("main").style.padding="0";
-              document.getElementById("main").style.background="#41866B";
-              document.getElementById("main").style.overflow="visible";
-              document.body.style.backgroundColor="white";
-              document.getElementById("menuicon").style.display="block";
-            }
-            
-            $(window).scroll(function() {
-              $('#animated').each(function() {
-                var imagePos=$(this).offset().top;
-                var topOfWindow=$(window).scrollTop();
-            
-                if(imagePos < topOfWindow+400) {
-                  $(this).addClass("slideLeft");
-                }
-              })
-            })
-            
-            $(function() {
-              var $parallaxBackground=$('.parallax-background');
-              $(window).on('scroll', function() {
-                var scroll=$(document).scrollTop();
-            
-                $parallaxBackground.css({
-                  'background-position':'20% ' +(-.2*scroll)+'px'
-                });
-              });
-            });
-            
-            //- Lazyload
-            var imgDefer = document.getElementsByTagName('img');
-            for (var i=0; i<imgDefer.length; i++) {
-              if(imgDefer[i].getAttribute('data-src')) {
-                imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-              }
-            }
-          </script>
-        </div>
-      </footer>
     </div>
   </body>
+  <div id="foo">
+    <div class="container">
+      <h2 class="color-white">Suscríbete para recibir noticias y promociones</h2>
+      <input type="email" placeholder="jhon.doe@mail.com"><br>
+      <input class="btn btn-large btn-primary bnt-send" type="submit" value="Suscribirse">
+    </div>
+    <footer>
+      <div class="container">
+        <div class="container-copyright">
+          <p class="hl">ECOGYE nos  preocupamos por usted y el medio ambiente.</p>
+        </div>
+        <div class="foobar">
+          <div class="foobar-content">
+            <ul>
+              <li><a href="#main"><i data-feather="chevrons-up"></i></a></li>
+              <li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="github"></i></a></li>
+              <li><a href="write a link" target="_blank"><i data-feather="facebook"></i></a></li>
+              <li><a href="Write a link" target="_blank"><i data-feather="youtube"></i></a></li>
+              <li><a href="https://github.com/alejandrocordova/ecogye" target="_blank"><i data-feather="instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <script src="scripts/vendors/feather.js"></script>
+        <script>
+          feather.replace();
+          
+          $(document).ready(function() {
+            $('.carousel').slick({
+              dots: true,
+              adaptiveHeight: true,
+              autoplay: true,
+              arrows: true
+            });
+          });
+          
+          $(function() {
+            var $parallaxBackground=$('.know');
+          })
+          
+          //- navbar functions
+          //- Active function
+          function openNav() {
+            document.getElementById("responsive-menu").style. width="200px";
+            document.getElementById("main").style.marginLeft="200px";
+            document.getElementById("main").style.padding="16px";
+            document.getElementById("main").style.background="#41866B";
+            document.getElementById("main").style.overflow="hidden";
+            document.body.style.backgroundColor="rgba(0,0,0,.4)";
+            document.getElementById("menuicon").style.display="none";
+          }
+          
+          //- Shutdown function
+          function closenav() {
+            document.getElementById("responsive-menu").style. width="0";
+            document.getElementById("main").style.marginLeft="0";
+            document.getElementById("main").style.padding="0";
+            document.getElementById("main").style.background="#41866B";
+            document.getElementById("main").style.overflow="visible";
+            document.body.style.backgroundColor="white";
+            document.getElementById("menuicon").style.display="block";
+          }
+          
+          $(window).scroll(function() {
+            $('#animated').each(function() {
+              var imagePos=$(this).offset().top;
+              var topOfWindow=$(window).scrollTop();
+          
+              if(imagePos < topOfWindow+400) {
+                $(this).addClass("slideLeft");
+              }
+            })
+          })
+          
+          $(function() {
+            var $parallaxBackground=$('.know');
+            $(window).on('scroll', function() {
+              var scroll=$(document).scrollTop();
+          
+              $parallaxBackground.css({
+                'background-position':'20% ' +(-.2*scroll)+'px'
+              });
+            });
+          });
+          
+          //- Lazyload
+          var imgDefer = document.getElementsByTagName('img');
+          for (var i=0; i<imgDefer.length; i++) {
+            if(imgDefer[i].getAttribute('data-src')) {
+              imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+            }
+          }
+        </script>
+      </div>
+    </footer>
+  </div>
 </html>
