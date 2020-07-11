@@ -22,10 +22,10 @@ blockquote {
   font-style: italic;
   margin: auto;
   padding-bottom: 8pt;
-  font-size: 22px;
-  color: #FFFFFF; }
+  font-size: 22px; }
   blockquote p {
-    font-weight: lighter; }
+    font-weight: lighter;
+    color: #FFFFFF; }
 
 h1 {
   font-size: 48px; }
@@ -41,6 +41,9 @@ h4 {
 
 h5 {
   font-size: 16px; }
+
+p {
+  color: #575757; }
 
 .hl {
   text-transform: uppercase;
@@ -126,6 +129,12 @@ footer {
   width: 500px;
   overflow: hidden;
   margin: none; }
+  #sec1 .slide img {
+    display: block;
+    width: 100%; }
+
+#sec1 .container p, #sec1 .flex-container p, #sec1 .flex-item p {
+  line-height: 1.8; }
 
 #sec2 .container h2 {
   text-transform: uppercase;
@@ -135,8 +144,10 @@ footer {
 
 #sec2 .container .flex-item {
   -webkit-flex: 1 0 210px;
-  flex: 1 0 210px;
-  padding: 16pt; }
+  flex: 1 0 200px;
+  padding: 16pt;
+  transition: .3s all ease;
+  border-radius: 3px; }
 
 #sec2 .container .feather {
   display: block;
@@ -150,14 +161,16 @@ footer {
 #sec2 .container h5 {
   padding-top: 16pt;
   text-align: center;
+  text-transform: uppercase;
   color: white;
   font-size: 20px;
   font-weight: regular !important; }
 
 #sec2 .container p {
-  text-align: justify;
+  text-align: center;
   font-size: 18px;
-  width: 200px;
+  font-weight: lighter;
+  width: 210px;
   margin: auto;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
@@ -167,7 +180,7 @@ footer {
   text-transform: uppercase;
   padding-bottom: 32pt; }
 
-#sec3 h5 {
+#sec3 p {
   padding-top: 16pt;
   text-align: center; }
 
