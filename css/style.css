@@ -68,6 +68,18 @@ h5 {
   max-width: 1366px;
   padding: 32pt 32pt 32pt 32pt; }
 
+#sec4 {
+  background-color: #292929;
+  text-align: center; }
+  #sec4 h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-weight: lighter; }
+
+footer {
+  background-color: #1d1d1d;
+  color: #FFFFFF; }
+
 .showcase {
   display: flex;
   display: -webkit-flex;
@@ -118,7 +130,7 @@ h5 {
 #sec2 .container h2 {
   text-transform: uppercase;
   text-align: center;
-  paddign-bottom: 32pt;
+  margin-bottom: 40pt;
   color: white; }
 
 #sec2 .container .flex-item {
@@ -167,18 +179,6 @@ h5 {
     border-radius: 100%;
     width: 100%;
     display: block; }
-
-#sec4 {
-  background-color: #292929;
-  text-align: center; }
-  #sec4 h2 {
-    text-transform: uppercase;
-    font-weight: normal;
-    font-weight: lighter; }
-
-footer {
-  background-color: #1d1d1d;
-  color: #FFFFFF; }
 
 .navbar {
   display: block;
@@ -1061,6 +1061,23 @@ stretchRight
     -webkit-transform: scaleX(1.01); }
   100% {
     -webkit-transform: scaleX(1); } }
+
+.leaf {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 60px;
+  transition: .3s all ease; }
+  .leaf:hover {
+    color: #41866B; }
+
+.footer-icon {
+  font-size: 18px; }
+
+ion-icon {
+  --ionicon-stroke-width: 10px;
+  stroke-width: 10px; }
 
 /* Large Screens */
 @media screen and (max-width: 1024px) {
