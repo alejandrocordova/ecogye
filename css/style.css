@@ -129,7 +129,8 @@ footer {
   height: 300px;
   width: 500px;
   overflow: hidden;
-  margin: none; }
+  margin: auto;
+  background-color: red; }
   #sec1 .slide img {
     display: block;
     width: 100%; }
