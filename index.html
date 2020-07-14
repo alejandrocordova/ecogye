@@ -35,12 +35,12 @@
     <div class="content">
       <div id="sec1">
         <div class="container">
-          <div class="flex-container">
-            <div class="flex-item">
+          <div class="container--flex">
+            <div class="item--flex">
               <h2>Acerca de Nosotros</h2>
               <p>ECOGYE es un proyecto sin fines de lucro engcargado de promover el cuidado del medio ambiente mediante la sustitución de hábitos nocivos para nuestro ecositema que empeoran los daños colaterales con los que lidiamos debido al calentamiento global.</p>
             </div>
-            <div class="flex-item">
+            <div class="item--flex">
               <div class="slide">
                 <div class="carousel"><img src="images/slider/gye-catedral.jpg" width="100%" alt="Catedral - Centro de Guayaquil"><img src="images/slider/gye-bridge.jpg" width="100%" alt="Puente: Universidad Estatal/UCSG"><img src="images/slider/gye-city.jpg" width="100%" alt="Malecón 2000"></div>
               </div>
@@ -51,22 +51,22 @@
       <div class="parallax-background" id="sec2">
         <div class="container">
           <h2>ECOGYE</h2>
-          <div class="flex-container">
-            <div class="flex-item info">
-              <ion-icon class="leaf" name="alert-circle-outline"></ion-icon>
+          <div class="container--flex">
+            <div class="item--flex info">
+              <ion-icon class="info-icon" name="alert-circle-outline"></ion-icon>
               <h5>Misión</h5>
               <p>Compartir información y alternativas ecológicas a través de los medios de comunicación masiva que insentive a las personas a tener un estlo de vida mejor.</p>
             </div>
-            <div class="flex-item info">
-              <ion-icon class="leaf" name="eye-outline"></ion-icon>
+            <div class="item--flex info">
+              <ion-icon class="info-icon" name="eye-outline"></ion-icon>
               <h5>Visión</h5>
               <p>Crear un Guayaquil que sea modelo de sensibilidad y cuidado ambiental, que lucha contra el calentamiento golbal... <a href='#'>Ver más</a></p>
             </div>
-            <div class="flex-item info">
-              <ion-icon class="leaf" name="people-outline"></ion-icon>
+            <div class="item--flex info">
+              <ion-icon class="info-icon" name="people-outline"></ion-icon>
               <h5>Sponsors</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <button class="bnt btn-centered">Entrar</button>
+              <button class="bnt btn-centered" id="show-modal">Entrar</button>
             </div>
           </div>
         </div>
@@ -74,17 +74,17 @@
       <div id="sec3">
         <div class="container">
           <h2>NUESTROS OBJETIVOS</h2>
-          <div class="flex-container" id="animated">
-            <div class="flex-item"><img class="showScroll" src="images/objetives/img1.png" width="100%">
+          <div class="container--flex" id="animated">
+            <div class="item--flex"><img class="showScroll" src="images/objetives/img1.png" width="100%">
               <p>Concientizar a la ciudadanía sobre la importancia de cuidar el medio ambiente.</p>
             </div>
-            <div class="flex-item"><img class="showScroll" src="images/objetives/img2.png" width="100%">
+            <div class="item--flex"><img class="showScroll" src="images/objetives/img2.png" width="100%">
               <p>Educar e insentivar el manejo de desechos orgánicos para transformarlo en compostaje.</p>
             </div>
-            <div class="flex-item"><img class="showScroll" src="images/objetives/img3.png" width="100%">
+            <div class="item--flex"><img class="showScroll" src="images/objetives/img3.png" width="100%">
               <p>Reforestación y creación de nuevas zonas verdes dentro de la ciudad.</p>
             </div>
-            <div class="flex-item"><img class="showScroll" src="images/objetives/img4.png" width="100%">
+            <div class="item--flex"><img class="showScroll" src="images/objetives/img4.png" width="100%">
               <p>Promoción de artículos amigables con el nedio ambiente.</p>
             </div>
           </div>
@@ -123,6 +123,7 @@
           </div>
           <script src="scripts/vendors/feather.js"></script>
           <script src="scripts/vendors/ionicons/ionicons.js"></script>
+          <script src="scripts/index.js"></script>
           <script>
             feather.replace();
             
